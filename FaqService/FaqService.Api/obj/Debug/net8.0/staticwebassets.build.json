@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mUgApQOCCxx4idTagM+uolGuPmWDeqndhDDVVNShKrY=",
+  "Source": "FaqService.Api",
+  "BasePath": "_content/FaqService.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
