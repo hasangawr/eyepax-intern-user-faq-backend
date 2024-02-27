@@ -26,6 +26,22 @@ namespace FaqService.Dal
                 .HasMany(p => p.Questions)
                 .WithOne(p => p.User!)
                 .HasForeignKey(p => p.UserId);
+            modelBuilder
+                .Entity<Question>()
+                .HasOne(p => p.User)
+                .WithMany(p => p.Questions)
+                .HasForeignKey(p => p.UserId);
+
+            modelBuilder
+               .Entity<Question>()
+               .HasMany(p => p.Questions)
+               .WithOne(p => p.User!)
+               .HasForeignKey(p => p.UserId);
+            modelBuilder
+                .Entity<Question>()
+                .HasOne(p => p.User)
+                .WithMany(p => p.Questions)
+                .HasForeignKey(p => p.UserId);
 
             //modelBuilder
             //    .Entity<Platform>()

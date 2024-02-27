@@ -21,5 +21,7 @@ namespace FaqService.Domain.Models
 
         [Required]
         public int UserId { get; set; }
+
+
     }
 }
