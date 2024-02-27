@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthenticationDataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68c448007da34cc7dbdf839efd9ea27154b8c64f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d592d51b80d5f8e57538f64f8d9cb3d09a33307a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthenticationDataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthenticationDataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UserDataAccessLayer
-build_property.ProjectDir = D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\
+build_property.ProjectDir = D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

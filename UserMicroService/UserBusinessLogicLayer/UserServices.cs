@@ -55,7 +55,7 @@ namespace UserBusinessLogicLayer
             {
                 Id = id,
                 FirstName = postUser.FirstName,
-                LastName = postUser.FirstName,
+                LastName = postUser.LastName,
                 Password = postUser.Password,
                 Email = postUser.Email,
                 UserName = postUser.UserName,

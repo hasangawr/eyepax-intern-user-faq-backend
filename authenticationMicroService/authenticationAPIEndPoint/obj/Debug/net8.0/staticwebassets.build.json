@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9nkoiFKub43vADDkJb2kE35i7ZXnZ/aOhlsP5JSqezU=",
+  "Hash": "QhcJZBHUhTuwsXgg4eID/Bg7V0D69ZaAe48A+GI4pSs=",
   "Source": "authenticationAPIEndPoint",
   "BasePath": "_content/authenticationAPIEndPoint",
   "Mode": "Default",
@@ -47,10 +47,10 @@
       "OriginalItemSpec": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "D:\\DotNet\\BackendInternProect\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css",
+      "Identity": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css",
       "SourceId": "authenticationAPIEndPoint",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\DotNet\\BackendInternProect\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/authenticationAPIEndPoint",
       "RelativePath": "authenticationAPIEndPoint.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\DotNet\\BackendInternProect\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css"
+      "OriginalItemSpec": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\Debug\\net8.0\\scopedcss\\bundle\\authenticationAPIEndPoint.styles.css"
     }
   ]
 }

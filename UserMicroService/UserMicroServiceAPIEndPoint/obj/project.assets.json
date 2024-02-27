@@ -3060,11 +3060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotNet\\BackendInternProect\\UserMicroService\\UserMicroServiceAPIEndPoint\\UserMicroServiceAPIEndPoint.csproj",
+      "projectUniqueName": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserMicroServiceAPIEndPoint\\UserMicroServiceAPIEndPoint.csproj",
       "projectName": "UserMicroServiceAPIEndPoint",
-      "projectPath": "D:\\DotNet\\BackendInternProect\\UserMicroService\\UserMicroServiceAPIEndPoint\\UserMicroServiceAPIEndPoint.csproj",
+      "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserMicroServiceAPIEndPoint\\UserMicroServiceAPIEndPoint.csproj",
       "packagesPath": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\",
-      "outputPath": "D:\\DotNet\\BackendInternProect\\UserMicroService\\UserMicroServiceAPIEndPoint\\obj\\",
+      "outputPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserMicroServiceAPIEndPoint\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3086,11 +3086,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DotNet\\BackendInternProect\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj": {
-              "projectPath": "D:\\DotNet\\BackendInternProect\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj"
+            "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj": {
+              "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj"
             },
-            "D:\\DotNet\\BackendInternProect\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
-              "projectPath": "D:\\DotNet\\BackendInternProect\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj"
+            "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
+              "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj"
             }
           }
         }
