@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FaqService.Domain.Models
 {
-    internal class Comment
+    public class Comment
     {
         [Key]
         [Required]

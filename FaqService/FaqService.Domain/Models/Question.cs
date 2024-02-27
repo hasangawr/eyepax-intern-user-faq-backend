@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FaqService.Domain.Models
 {
-    internal class Question
+    public class Question
     {
         [Key]
         [Required]
@@ -23,6 +23,10 @@ namespace FaqService.Domain.Models
 
         [Required]
         public int UserId { get; set; }
+
+        public User? User { get; set; }
+
+        public ICollection<Answer> Answers { get; set; } = new List<Answer>();
     }
 
 }

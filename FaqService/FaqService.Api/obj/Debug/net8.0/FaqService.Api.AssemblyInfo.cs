@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FaqService.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9796c4d6347071da7a3d4913e4db2dfc3ae0ca6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3dfdad244f432d2816763735f27abd03a9c60bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("FaqService.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FaqService.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

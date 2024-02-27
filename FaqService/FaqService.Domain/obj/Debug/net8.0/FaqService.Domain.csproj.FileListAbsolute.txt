@@ -10,3 +10,6 @@ D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqS
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Domain\obj\Debug\net8.0\refint\FaqService.Domain.dll
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Domain\obj\Debug\net8.0\FaqService.Domain.pdb
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Domain\obj\Debug\net8.0\ref\FaqService.Domain.dll
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Domain\bin\Debug\net8.0\FaqService.Domain.runtimeconfig.json
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Domain\obj\Debug\net8.0\FaqService.Domain.csproj.AssemblyReference.cache
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Domain\obj\Debug\net8.0\FaqService.Domain.genruntimeconfig.cache

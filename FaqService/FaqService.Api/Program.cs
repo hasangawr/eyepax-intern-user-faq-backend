@@ -1,6 +1,17 @@
+using FaqService.Dal;
+using Microsoft.EntityFrameworkCore;
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+if (builder.Environment.IsDevelopment())
+{
+    Console.WriteLine("---> Using PostgreSql DB");
+    builder.Services.AddDbContext<AppDbContext>(opt =>
+        opt.UseNpgsql(builder.Configuration.GetConnectionString("FaqDbConn")));
+}
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
