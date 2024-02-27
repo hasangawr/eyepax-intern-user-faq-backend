@@ -41,30 +41,11 @@ namespace FaqService.Dal.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("QuestionId");
+
+                    b.HasIndex("UserId");
+
                     b.ToTable("Answers");
-                });
-
-            modelBuilder.Entity("FaqService.Domain.Models.Comment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AnswerId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("FaqService.Domain.Models.Question", b =>
@@ -117,6 +98,25 @@ namespace FaqService.Dal.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("FaqService.Domain.Models.Answer", b =>
+                {
+                    b.HasOne("FaqService.Domain.Models.Question", "Question")
+                        .WithMany("Answers")
+                        .HasForeignKey("QuestionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FaqService.Domain.Models.User", "User")
+                        .WithMany("Answers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Question");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("FaqService.Domain.Models.Question", b =>
                 {
                     b.HasOne("FaqService.Domain.Models.User", "User")
@@ -128,8 +128,15 @@ namespace FaqService.Dal.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("FaqService.Domain.Models.Question", b =>
+                {
+                    b.Navigation("Answers");
+                });
+
             modelBuilder.Entity("FaqService.Domain.Models.User", b =>
                 {
+                    b.Navigation("Answers");
+
                     b.Navigation("Questions");
                 });
 #pragma warning restore 612, 618

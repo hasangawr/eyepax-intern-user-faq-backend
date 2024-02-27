@@ -17,43 +17,27 @@ namespace FaqService.Dal
         public DbSet<User> Users { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Answer> Answers { get; set; }
-        public DbSet<Comment> Comments { get; set; }
+        //public DbSet<Comment> Comments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .Entity<User>()
                 .HasMany(p => p.Questions)
-                .WithOne(p => p.User!)
+                .WithOne(p => p.User)
                 .HasForeignKey(p => p.UserId);
+
+            modelBuilder
+                .Entity<User>()
+                .HasMany(p => p.Answers)
+                .WithOne(p => p.User)
+                .HasForeignKey(p => p.UserId);
+
             modelBuilder
                 .Entity<Question>()
-                .HasOne(p => p.User)
-                .WithMany(p => p.Questions)
-                .HasForeignKey(p => p.UserId);
-
-            modelBuilder
-               .Entity<Question>()
-               .HasMany(p => p.Questions)
-               .WithOne(p => p.User!)
-               .HasForeignKey(p => p.UserId);
-            modelBuilder
-                .Entity<Question>()
-                .HasOne(p => p.User)
-                .WithMany(p => p.Questions)
-                .HasForeignKey(p => p.UserId);
-
-            //modelBuilder
-            //    .Entity<Platform>()
-            //    .HasMany(p => p.Commands)
-            //    .WithOne(p => p.Platform!)
-            //    .HasForeignKey(p => p.PlatformId);
-
-            //modelBuilder
-            //    .Entity<Command>()
-            //    .HasOne(p => p.Platform)
-            //    .WithMany(p => p.Commands)
-            //    .HasForeignKey(p => p.PlatformId);
+                .HasMany(p => p.Answers)
+                .WithOne(p => p.Question)
+                .HasForeignKey(p => p.QuestionId);
 
         }
     }

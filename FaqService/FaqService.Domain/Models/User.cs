@@ -13,5 +13,6 @@ namespace FaqService.Domain.Models
         public string Name { get; set; } = string.Empty;
 
         public ICollection<Question> Questions { get; set; } = new List<Question>();
+        public ICollection<Answer> Answers { get; set; } = new List<Answer>();
     }
 }
