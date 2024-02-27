@@ -1,0 +1,15 @@
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\bin\Debug\net8.0\UserBusinessLogicLayer.deps.json
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\bin\Debug\net8.0\UserBusinessLogicLayer.dll
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\bin\Debug\net8.0\UserBusinessLogicLayer.pdb
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\bin\Debug\net8.0\UserDataAccessLayer.dll
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\bin\Debug\net8.0\UserDataAccessLayer.pdb
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\UserBusinessLogicLayer.csproj.AssemblyReference.cache
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\UserBusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\UserBusinessLogicLayer.AssemblyInfoInputs.cache
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\UserBusinessLogicLayer.AssemblyInfo.cs
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\UserBusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\UserBusinessLogicLayer.csproj.CopyComplete
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\UserBusinessLogicLayer.dll
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\refint\UserBusinessLogicLayer.dll
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\UserBusinessLogicLayer.pdb
+D:\DotNet\BackendInternProect\UserMicroService\UserBusinessLogicLayer\obj\Debug\net8.0\ref\UserBusinessLogicLayer.dll

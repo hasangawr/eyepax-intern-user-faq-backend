@@ -1,0 +1,14 @@
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.deps.json
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.runtimeconfig.json
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.dll
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.pdb
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.csproj.AssemblyReference.cache
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.AssemblyInfoInputs.cache
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.AssemblyInfo.cs
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.dll
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\refint\UserDataAccessLayer.dll
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.pdb
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.genruntimeconfig.cache
+D:\DotNet\BackendInternProect\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\ref\UserDataAccessLayer.dll
