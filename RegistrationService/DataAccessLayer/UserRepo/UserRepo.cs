@@ -18,13 +18,14 @@ namespace DataAccessLayer.UserRepo
             this.dbContext = dbContext;
         }
 
-        public async Task CreateUser(User user)
+        public async  Task<User> CreateUser(User user)
         {
             try
             {
                 
                 await dbContext.Users.AddAsync(user);
                 await dbContext.SaveChangesAsync();
+                return user;
 
             }
             catch (Exception ex)
@@ -34,6 +35,13 @@ namespace DataAccessLayer.UserRepo
             }
             
             
+        }
+
+        public async Task<bool> IsUsernameUnique(string InputUsername)
+        {
+            
+            bool result = await dbContext.Users.AnyAsync(u => u.UserName == InputUsername);
+            return !result;
         }
     }
 }

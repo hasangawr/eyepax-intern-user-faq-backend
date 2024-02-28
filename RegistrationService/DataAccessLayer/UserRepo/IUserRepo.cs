@@ -9,7 +9,9 @@ namespace DataAccessLayer.UserRepo
 {
     public interface IUserRepo
     {
-        Task CreateUser(User user); // create user
-        
+        Task<User> CreateUser(User user); // create user
+        Task<bool> IsUsernameUnique(string InputUsername); // check the uniqueness of the username
+
+
     }
 }

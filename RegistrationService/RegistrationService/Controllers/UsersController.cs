@@ -18,7 +18,7 @@ namespace RegistrationService.Controllers
 
         // post a user
         [HttpPost]
-        public IActionResult RegisterUser(AddUserReq addUserReq)
+        public async Task<IActionResult> RegisterUser(AddUserReq addUserReq)
         {
             try
             {
@@ -36,10 +36,14 @@ namespace RegistrationService.Controllers
 
                 }
 */              
-                registrationService.AddUser(addUserReq);
-                return StatusCode(200, new { msg = "Registration successful!" });
+                User user = await registrationService.AddUser(addUserReq);
+                return StatusCode(200, new { msg = "Registration successful!" , user});
 
 
+            }
+            catch (InvalidOperationException ex)
+            {
+                return StatusCode(400, new {msg = ex.Message});
             }
             catch (Exception ex)
             {

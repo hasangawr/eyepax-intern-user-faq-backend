@@ -9,6 +9,6 @@ namespace BusinessLogicLayer.Interfaces
 {
     public interface IRegistrationService
     {
-        void AddUser(AddUserReq addUserReq);
+        Task<User> AddUser(AddUserReq addUserReq);
     }
 }

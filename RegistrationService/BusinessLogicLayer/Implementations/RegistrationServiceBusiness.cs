@@ -20,20 +20,34 @@ namespace BusinessLogicLayer.Implementations
             this.passwordHasher = passwordHasher;
 
         }
-        public void AddUser(AddUserReq addUserReq)
+        public async Task<User> AddUser(AddUserReq addUserReq)
         {
-            var passwordHash = passwordHasher.Hash(addUserReq.Password);
-            User user = new User()
+            string username = addUserReq.UserName;
+            bool isUsernameUnique = await userRepo.IsUsernameUnique(username);
+            Console.WriteLine(isUsernameUnique);
+            if (isUsernameUnique)
             {
-                Id = new Guid(),
-                FirstName = addUserReq.FirstName,
-                LastName = addUserReq.LastName,
-                Email = addUserReq.Email,
-                Password = passwordHash,
-                UserName = addUserReq.UserName,
-                Role = addUserReq.Role
-            };
-            userRepo.CreateUser(user);
+                var passwordHash = passwordHasher.Hash(addUserReq.Password);
+                User user = new User()
+                {
+                    Id = new Guid(),
+                    FirstName = addUserReq.FirstName,
+                    LastName = addUserReq.LastName,
+                    Email = addUserReq.Email,
+                    Password = passwordHash,
+                    UserName = addUserReq.UserName,
+                    Role = addUserReq.Role
+                };
+                User createdUser = await userRepo.CreateUser(user);
+                return createdUser;
+
+            }
+            else
+            {
+                //here's an issue with the adding a user with a non-unique username
+                throw new InvalidOperationException("Username already exists!");
+            }
+
         }
 
     }
