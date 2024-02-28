@@ -1,4 +1,6 @@
 using FaqService.Dal;
+using FaqService.Service;
+using FaqService.Service.interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -12,6 +14,11 @@ if (builder.Environment.IsDevelopment())
     builder.Services.AddDbContext<AppDbContext>(opt =>
         opt.UseNpgsql(builder.Configuration.GetConnectionString("FaqDbConn")));
 }
+
+builder.Services.AddScoped<IFaqRepo, FaqRepo>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IQuestionService, QuestionService>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
