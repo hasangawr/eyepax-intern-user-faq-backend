@@ -2316,19 +2316,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\": {}
+    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+      "projectUniqueName": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
       "projectName": "FaqService.Dal",
-      "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
-      "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
-      "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\obj\\",
+      "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+      "packagesPath": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\",
+      "outputPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NusalMuthuthanthrige\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2336,14 +2341,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
-              "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
+            "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+              "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
             }
           }
         }
