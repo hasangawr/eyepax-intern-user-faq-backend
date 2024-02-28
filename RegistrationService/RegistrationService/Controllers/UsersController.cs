@@ -2,6 +2,7 @@
 using DataAccessLayer.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 using System.Runtime.CompilerServices;
 
@@ -22,28 +23,20 @@ namespace RegistrationService.Controllers
         {
             try
             {
-                /*if (ModelState.IsValid)
-                {
-                    registrationService.AddUser(addUserReq);
-                    return Ok("Registration successful!");
-
-                }
-                else
-                {
-
-                    // Console.WriteLine(ModelState);
-                    return BadRequest(ModelState);
-
-                }
-*/              
-                User user = await registrationService.AddUser(addUserReq);
-                return StatusCode(200, new { msg = "Registration successful!" , user});
+                           
+                User createdUser = await registrationService.AddUser(addUserReq);
+                return StatusCode(200, new { msg = "Registration successful!" , createdUser});
 
 
             }
             catch (InvalidOperationException ex)
             {
                 return StatusCode(400, new {msg = ex.Message});
+            }
+            catch(DbUpdateException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, new { msg = "Database error!" });
             }
             catch (Exception ex)
             {

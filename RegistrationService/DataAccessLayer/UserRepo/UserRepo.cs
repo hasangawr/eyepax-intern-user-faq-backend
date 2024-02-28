@@ -20,20 +20,12 @@ namespace DataAccessLayer.UserRepo
 
         public async  Task<User> CreateUser(User user)
         {
-            try
-            {
+            
                 
                 await dbContext.Users.AddAsync(user);
                 await dbContext.SaveChangesAsync();
                 return user;
 
-            }
-            catch (Exception ex)
-            {
-                //Console.Write(ex.Message);
-                throw new Exception(ex .ToString());
-            }
-            
             
         }
 
