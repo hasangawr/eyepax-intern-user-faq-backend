@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tszRIVPNgNBqeCUsa00324iXQJeBxFTkMSimyssum6s=",
+  "Source": "UserMicroServiceAPIEndPoint",
+  "BasePath": "_content/UserMicroServiceAPIEndPoint",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
