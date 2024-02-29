@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UserBusinessLogicLayer;
+using UserBusinessLogicLayer.PasswordServices;
 using UserBusinessLogicLayer.TokenValidationServices;
 using UserDataAccessLayer.InternalServices;
 using UserDataAccessLayer.UserAppDbContext;
@@ -17,6 +18,7 @@ builder.Services.AddScoped<IUserMapper, UserMapper>();
 builder.Services.AddScoped<IUserRepo, UserRepo>();
 builder.Services.AddScoped<IUserServices, UserServices>();
 builder.Services.AddScoped<ITokenServices, TokenServices>();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

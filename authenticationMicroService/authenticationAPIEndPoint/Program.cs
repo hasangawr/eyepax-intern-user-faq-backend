@@ -1,4 +1,5 @@
 using AuthenticationBusinessLogicLayer;
+using AuthenticationBusinessLogicLayer.PasswordServices;
 using AuthenticationDataAccessLayer.AuthentcationAppDbContext;
 using AuthenticationDataAccessLayer.AuthenticationRepo;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddScoped<IAuthenticationRepo,AuthenticationRepo>();
 builder.Services.AddScoped<IAuthenticationBusinessLogic, AuthenticationBusinessLogic>();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
