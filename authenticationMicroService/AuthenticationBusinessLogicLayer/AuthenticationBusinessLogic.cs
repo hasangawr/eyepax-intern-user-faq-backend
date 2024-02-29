@@ -1,4 +1,5 @@
-﻿using AuthenticationDataAccessLayer.AuthenticationRepo;
+﻿using AuthenticationBusinessLogicLayer.PasswordServices;
+using AuthenticationDataAccessLayer.AuthenticationRepo;
 using AuthenticationDataAccessLayer.Entities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -12,16 +13,18 @@ namespace AuthenticationBusinessLogicLayer
     {
         private readonly IAuthenticationRepo AuthRepo;
         private readonly IConfiguration configuration;
-        public AuthenticationBusinessLogic(IAuthenticationRepo AuthRepo, IConfiguration configuration)
+        private readonly IPasswordHasher _pwServices;
+        public AuthenticationBusinessLogic(IAuthenticationRepo AuthRepo, IConfiguration configuration, IPasswordHasher pwServices)
         {
             this.AuthRepo = AuthRepo;
             this.configuration = configuration;
+            this._pwServices = pwServices;
         }
 
         public async Task<string> Authenticate(ReqUser user)
         {
             var valid = await AuthRepo.GetUserAsync(user.UserName);
-            if (user != null && valid.Password == user.Password)
+            if (user != null && _pwServices.Verify(valid.Password, user.Password))
             {
                 
                 var tokenHandler = new JwtSecurityTokenHandler();

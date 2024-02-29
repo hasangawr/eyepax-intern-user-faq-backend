@@ -1,4 +1,5 @@
-﻿using UserDataAccessLayer.Entities;
+﻿using UserBusinessLogicLayer.PasswordServices;
+using UserDataAccessLayer.Entities;
 using UserDataAccessLayer.UserAppRepo;
 
 namespace UserBusinessLogicLayer
@@ -6,9 +7,11 @@ namespace UserBusinessLogicLayer
     public class UserServices : IUserServices
     {
         private readonly IUserRepo _userRepo;
-        public UserServices(IUserRepo userRepo)
+        private readonly IPasswordHasher _pwServices;
+        public UserServices(IUserRepo userRepo, IPasswordHasher pwServices)
         {
             _userRepo = userRepo;
+            _pwServices = pwServices;
         }
         public void CreateUserAsync(PostUser postUser)
         {
@@ -17,7 +20,7 @@ namespace UserBusinessLogicLayer
                 Id = Guid.NewGuid(),
                 FirstName = postUser.FirstName,
                 LastName = postUser.LastName,
-                Password = postUser.Password,
+                Password = _pwServices.Hash(postUser.Password),
                 Email = postUser.Email,
                 UserName = postUser.UserName
             };
@@ -56,7 +59,7 @@ namespace UserBusinessLogicLayer
                 Id = id,
                 FirstName = postUser.FirstName,
                 LastName = postUser.LastName,
-                Password = postUser.Password,
+                Password = _pwServices.Hash(postUser.Password),
                 Email = postUser.Email,
                 UserName = postUser.UserName,
                 Role = postUser.Role
