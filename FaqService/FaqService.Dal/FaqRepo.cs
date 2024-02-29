@@ -20,6 +20,11 @@ namespace FaqService.Dal
             _dbContext = dbContext;
         }
 
+        public bool AnswerExists(int questionId, int answerId)
+        {
+            return _dbContext.Answers.Any(a => a.QuestionId == questionId && a.Id == answerId);
+        }
+
         public void CreateAnswer(Answer answer)
         {
             _dbContext.Answers.Add(answer);
@@ -35,6 +40,16 @@ namespace FaqService.Dal
         public void CreateUser(User user)
         {
             _dbContext.Users.Add(user);
+            _dbContext.SaveChanges();
+        }
+
+        public void DeleteAnswer(int answerId)
+        {
+            var answer = _dbContext.Answers.FirstOrDefault(a => a.Id == answerId);
+            if (answer != null) 
+            {
+                _dbContext.Answers.Remove(answer);
+            }
             _dbContext.SaveChanges();
         }
 
@@ -69,9 +84,45 @@ namespace FaqService.Dal
             return _dbContext.Answers.Where(a => a.QuestionId == questionId);
         }
 
+        public bool QuestionExists(int questionId)
+        {
+            return _dbContext.Questions.Any(q => q.Id == questionId);
+        }
+
         public bool SaveChanges()
         {
             return (_dbContext.SaveChanges() >= 0);
+        }
+
+        public Answer UpdateAnswer(int questionId, int answerId, Answer answer)
+        {
+            var answerFromDb = _dbContext.Answers
+                            .Where(a => a.QuestionId == questionId && a.Id == answerId)
+                            .FirstOrDefault();
+
+            answerFromDb.Description = answer.Description;
+
+            _dbContext.SaveChanges();
+
+            return _dbContext.Answers
+                            .Where(a => a.QuestionId == questionId && a.Id == answerId)
+                            .FirstOrDefault();
+        }
+
+        public Question UpdateQuestion(int questionId, Question question)
+        {
+            var questionFromDb = _dbContext.Questions
+                            .Where(q => q.Id == questionId)
+                            .FirstOrDefault();
+
+            questionFromDb.Title = question.Title;
+            questionFromDb.Description = question.Description;
+
+            _dbContext.SaveChanges();
+
+            return _dbContext.Questions
+                            .Where(q => q.Id == questionId)
+                            .FirstOrDefault();
         }
 
         public bool UserExists(int userId)

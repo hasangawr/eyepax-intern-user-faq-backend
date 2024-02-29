@@ -66,5 +66,19 @@ namespace FaqService.Service
 
             return _mapper.Map<QuestionReadDto>(question);
         }
+
+        public bool QuestionExists(int questionId)
+        {
+            return _faqRepo.QuestionExists(questionId);
+        }
+
+        public QuestionReadDto UpdateQuestion(int questionId, QuestionCreateDto questionCreateDto)
+        {
+            var question = _mapper.Map<Question>(questionCreateDto);
+
+            var result = _faqRepo.UpdateQuestion(questionId, question);
+
+            return _mapper.Map<QuestionReadDto>(result);
+        }
     }
 }

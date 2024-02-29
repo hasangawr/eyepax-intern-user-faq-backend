@@ -15,7 +15,7 @@ namespace FaqService.Api.Controllers
         private readonly IUserService _userService;
         private readonly IAnswerService _answerService;
 
-        public FaqController(IQuestionService questionService, IUserService userService, IAnswerService answerService) 
+        public FaqController(IQuestionService questionService, IUserService userService, IAnswerService answerService)
         {
             _questionService = questionService;
             _userService = userService;
@@ -31,7 +31,7 @@ namespace FaqService.Api.Controllers
 
 
         [HttpGet("questions")]
-        public ActionResult<IEnumerable<QuestionReadDto>> GetAllQuestions() 
+        public ActionResult<IEnumerable<QuestionReadDto>> GetAllQuestions()
         {
             return Ok(_questionService.GetAllQuestions());
         }
@@ -49,7 +49,8 @@ namespace FaqService.Api.Controllers
             {
                 _questionService.CreateQuestion(userId, questionCreateDto);
 
-            } catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -57,7 +58,7 @@ namespace FaqService.Api.Controllers
             return Ok("Question successfully created");
         }
 
-        
+
         [HttpGet("questions/{questionId}")]
         public ActionResult<QuestionReadDto> GetQuestionById(int questionId)
         {
@@ -65,8 +66,33 @@ namespace FaqService.Api.Controllers
         }
 
 
+        [HttpPut("questions/{questionId}")]
+        public ActionResult<QuestionReadDto> UpdateQuestion([FromRoute] int questionId,
+            [FromBody] QuestionCreateDto questionCreateDto)
+        {
+            if (!_questionService.QuestionExists(questionId))
+            {
+                return NotFound("Question not found");
+            }
+
+            QuestionReadDto question;
+
+            try
+            {
+                question = _questionService.UpdateQuestion(questionId, questionCreateDto);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok(question);
+        }
+
+
         [HttpDelete("questions/{questionId}")]
-        public ActionResult DeleteQuestion(int questionId) 
+        public ActionResult DeleteQuestion(int questionId)
         {
             var question = _questionService.DeleteQuestion(questionId);
 
@@ -83,6 +109,93 @@ namespace FaqService.Api.Controllers
         public ActionResult<IEnumerable<AnswerReadDto>> GetQuestionAnswers(int questionId)
         {
             return Ok(_answerService.GetQuestionAnswers(questionId));
+        }
+
+
+        [HttpPost("questions/{questionId}/answers")]
+        public ActionResult AddQuestionAnswers
+            (int userId, int questionId, AnswerCreateDto answerCreateDto)
+        {
+            if (!_userService.UserExists(userId))
+            {
+                return NotFound("User not found");
+            }
+
+            if (!_questionService.QuestionExists(questionId))
+            {
+                return NotFound("Question not found");
+            }
+
+            try
+            {
+                _answerService.AddQuestionAnswers(userId, questionId, answerCreateDto);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok("Answer successfully added");
+        }
+
+
+        [HttpPut("questions/{questionId}/answers/{answerId}")]
+        public ActionResult<AnswerReadDto> UpdateAnswer
+            (int answerId, int questionId, AnswerCreateDto answerCreateDto)
+        {
+
+            if (!_questionService.QuestionExists(questionId))
+            {
+                return NotFound("Question not found");
+            }
+
+            if (!_answerService.AnswerExists(questionId, answerId))
+            {
+                return NotFound("Answer not found");
+            }
+
+            AnswerReadDto answerReadDto;
+
+            try
+            {
+                answerReadDto = _answerService.UpdateAnswer(questionId, answerId, answerCreateDto);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok(answerReadDto);
+        }
+
+
+        [HttpDelete("questions/{questionId}/answers/{answerId}")]
+        public ActionResult DeleteAnswer(int questionId, int answerId)
+        {
+            if (!_questionService.QuestionExists(questionId))
+            {
+                return NotFound("Question not found");
+            }
+
+            if (!_answerService.AnswerExists(questionId, answerId))
+            {
+                return NotFound("Answer not found");
+            }
+
+            try
+            {
+                _answerService.DeleteAnswer(answerId);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+
+            return Ok("Answer successfully deleted");
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using FaqService.Domain.Dtos;
+﻿using AutoMapper;
+using FaqService.Domain.Dtos;
 using FaqService.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -15,5 +16,7 @@ namespace FaqService.Service.interfaces
         IEnumerable<QuestionReadDto> GetAllQuestions();
 
         QuestionReadDto GetQuestion(int questionId);
+        bool QuestionExists(int questionId);
+        QuestionReadDto UpdateQuestion(int questionId, QuestionCreateDto questionCreateDto);
     }
 }

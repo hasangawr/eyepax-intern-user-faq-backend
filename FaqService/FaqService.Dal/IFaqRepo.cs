@@ -1,4 +1,5 @@
-﻿using FaqService.Domain.Models;
+﻿using FaqService.Domain.Dtos;
+using FaqService.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,11 @@ namespace FaqService.Dal
         void CreateAnswer(Answer answer);
         void DeleteQuestion(Question question);
         IEnumerable<Answer> GetQuestionAnswers(int questionId);
+        bool QuestionExists(int questionId);
+        Question UpdateQuestion(int questionId, Question question);
+        bool AnswerExists(int questionId, int answerId);
+        Answer UpdateAnswer(int questionId, int answerId, Answer answer);
+        void DeleteAnswer(int answerId);
         //bool ExternalPlatformExists(int externalPlatformId);
 
         // Answers
