@@ -64,6 +64,11 @@ namespace FaqService.Dal
                             .FirstOrDefault();
         }
 
+        public IEnumerable<Answer> GetQuestionAnswers(int questionId)
+        {
+            return _dbContext.Answers.Where(a => a.QuestionId == questionId);
+        }
+
         public bool SaveChanges()
         {
             return (_dbContext.SaveChanges() >= 0);

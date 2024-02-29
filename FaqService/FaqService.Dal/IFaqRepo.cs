@@ -22,6 +22,7 @@ namespace FaqService.Dal
         void CreateUser(User user);
         void CreateAnswer(Answer answer);
         void DeleteQuestion(Question question);
+        IEnumerable<Answer> GetQuestionAnswers(int questionId);
         //bool ExternalPlatformExists(int externalPlatformId);
 
         // Answers

@@ -13,11 +13,13 @@ namespace FaqService.Api.Controllers
     {
         private readonly IQuestionService _questionService;
         private readonly IUserService _userService;
+        private readonly IAnswerService _answerService;
 
-        public FaqController(IQuestionService questionService, IUserService userService) 
+        public FaqController(IQuestionService questionService, IUserService userService, IAnswerService answerService) 
         {
             _questionService = questionService;
             _userService = userService;
+            _answerService = answerService;
         }
 
         [HttpGet]
@@ -74,6 +76,13 @@ namespace FaqService.Api.Controllers
             }
 
             return Ok("Question successfully deleted");
+        }
+
+
+        [HttpGet("questions/{questionId}/answers")]
+        public ActionResult<IEnumerable<AnswerReadDto>> GetQuestionAnswers(int questionId)
+        {
+            return Ok(_answerService.GetQuestionAnswers(questionId));
         }
 
     }
