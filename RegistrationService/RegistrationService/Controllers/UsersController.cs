@@ -25,7 +25,7 @@ namespace RegistrationService.Controllers
             {
                            
                 User createdUser = await registrationService.AddUser(addUserReq);
-                return StatusCode(200, new { msg = "Registration successful!" , createdUser});
+                return StatusCode(200, new { msg = "Registration successful!" , user = createdUser});
 
 
             }
