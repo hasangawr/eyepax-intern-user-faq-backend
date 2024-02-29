@@ -3,6 +3,7 @@ using FaqService.Domain.Models;
 using FaqService.Service.interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FaqService.Api.Controllers
 {
@@ -33,6 +34,7 @@ namespace FaqService.Api.Controllers
             return Ok(_questionService.GetAllQuestions());
         }
 
+
         [HttpPost("questions")]
         public ActionResult CreateQuestion(int userId, QuestionCreateDto questionCreateDto)
         {
@@ -53,10 +55,25 @@ namespace FaqService.Api.Controllers
             return Ok("Question successfully created");
         }
 
+        
         [HttpGet("questions/{questionId}")]
         public ActionResult<QuestionReadDto> GetQuestionById(int questionId)
         {
             return Ok(_questionService.GetQuestion(questionId));
+        }
+
+
+        [HttpDelete("questions/{questionId}")]
+        public ActionResult DeleteQuestion(int questionId) 
+        {
+            var question = _questionService.DeleteQuestion(questionId);
+
+            if (question == null)
+            {
+                return NotFound("Question Not Found");
+            }
+
+            return Ok("Question successfully deleted");
         }
 
     }

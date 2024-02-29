@@ -36,6 +36,18 @@ namespace FaqService.Service
             _faqRepo.CreateQuestion(question);
         }
 
+        public Question DeleteQuestion(int questionId)
+        {
+            var question = _faqRepo.GetQuestion(questionId);
+
+            if (question != null) 
+            {
+                _faqRepo.DeleteQuestion(question);
+            }
+
+            return question;
+        }
+
         public IEnumerable<QuestionReadDto> GetAllQuestions() 
         {
             var questions = _faqRepo.GetAllQuestions();

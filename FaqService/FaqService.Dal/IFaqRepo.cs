@@ -21,6 +21,7 @@ namespace FaqService.Dal
         bool UserExists(int userId);
         void CreateUser(User user);
         void CreateAnswer(Answer answer);
+        void DeleteQuestion(Question question);
         //bool ExternalPlatformExists(int externalPlatformId);
 
         // Answers

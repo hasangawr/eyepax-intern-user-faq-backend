@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FaqService.Dal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8756f6137909ea19d615f5e513f9b43a24156737")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fea46ca657d790c6bad7bd9285e5551b1af41ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("FaqService.Dal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FaqService.Dal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

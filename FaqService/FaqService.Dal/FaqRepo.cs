@@ -38,6 +38,12 @@ namespace FaqService.Dal
             _dbContext.SaveChanges();
         }
 
+        public void DeleteQuestion(Question question)
+        {
+            _dbContext.Questions.Remove(question);
+            _dbContext.SaveChanges();
+        }
+
         public IEnumerable<Question> GetAllQuestions()
         {
             var questions = _dbContext.Questions.ToList();
