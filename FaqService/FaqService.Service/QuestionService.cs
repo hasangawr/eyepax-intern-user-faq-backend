@@ -35,5 +35,24 @@ namespace FaqService.Service
             question.UserId = userId;
             _faqRepo.CreateQuestion(question);
         }
+
+        public IEnumerable<QuestionReadDto> GetAllQuestions() 
+        {
+            var questions = _faqRepo.GetAllQuestions();
+
+            return _mapper.Map<IEnumerable<QuestionReadDto>>(questions);
+        }
+
+        public QuestionReadDto GetQuestion(int questionId) 
+        {
+            var question = _faqRepo.GetQuestion(questionId);
+
+            if (question == null)
+            {
+                throw new ArgumentNullException($"Question {questionId} is not found");
+            }
+
+            return _mapper.Map<QuestionReadDto>(question);
+        }
     }
 }

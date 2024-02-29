@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FaqService.Dal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240227180650_InitialMigration")]
+    [Migration("20240229083641_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -62,10 +62,6 @@ namespace FaqService.Dal.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<string[]>("Keywords")
-                        .IsRequired()
-                        .HasColumnType("text[]");
 
                     b.Property<string>("Title")
                         .IsRequired()

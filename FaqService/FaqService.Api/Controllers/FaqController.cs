@@ -26,6 +26,13 @@ namespace FaqService.Api.Controllers
             return Ok(new List<int>());
         }
 
+
+        [HttpGet("questions")]
+        public ActionResult<IEnumerable<QuestionReadDto>> GetAllQuestions() 
+        {
+            return Ok(_questionService.GetAllQuestions());
+        }
+
         [HttpPost("questions")]
         public ActionResult CreateQuestion(int userId, QuestionCreateDto questionCreateDto)
         {
@@ -44,6 +51,12 @@ namespace FaqService.Api.Controllers
             }
 
             return Ok("Question successfully created");
+        }
+
+        [HttpGet("questions/{questionId}")]
+        public ActionResult<QuestionReadDto> GetQuestionById(int questionId)
+        {
+            return Ok(_questionService.GetQuestion(questionId));
         }
 
     }

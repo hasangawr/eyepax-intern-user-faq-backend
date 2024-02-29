@@ -1,10 +1,13 @@
-﻿using FaqService.Domain.Models;
+﻿using FaqService.Domain.Dtos;
+using FaqService.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace FaqService.Dal
 {
@@ -16,14 +19,31 @@ namespace FaqService.Dal
         {
             _dbContext = dbContext;
         }
+
+        public void CreateAnswer(Answer answer)
+        {
+            _dbContext.Answers.Add(answer);
+            _dbContext.SaveChanges();
+        }
+
         public void CreateQuestion(Question question)
         {
             _dbContext.Questions.Add(question);
+            _dbContext.SaveChanges();
+        }
+
+        public void CreateUser(User user)
+        {
+            _dbContext.Users.Add(user);
+            _dbContext.SaveChanges();
         }
 
         public IEnumerable<Question> GetAllQuestions()
         {
-            throw new NotImplementedException();
+            var questions = _dbContext.Questions.ToList();
+            Console.WriteLine("---> Question list");
+            Console.WriteLine(questions);
+            return questions;
         }
 
         public IEnumerable<Question> GetFrequentlyAskedQuestions()
@@ -31,9 +51,16 @@ namespace FaqService.Dal
             throw new NotImplementedException();
         }
 
+        public Question GetQuestion(int id)
+        {
+            return _dbContext.Questions
+                            .Where(q => q.Id == id)
+                            .FirstOrDefault();
+        }
+
         public bool SaveChanges()
         {
-            throw new NotImplementedException();
+            return (_dbContext.SaveChanges() >= 0);
         }
 
         public bool UserExists(int userId)

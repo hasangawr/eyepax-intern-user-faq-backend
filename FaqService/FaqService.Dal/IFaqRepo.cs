@@ -16,8 +16,11 @@ namespace FaqService.Dal
         // Questions
         IEnumerable<Question> GetFrequentlyAskedQuestions();
         IEnumerable<Question> GetAllQuestions();
+        Question GetQuestion(int id);
         void CreateQuestion(Question question);
         bool UserExists(int userId);
+        void CreateUser(User user);
+        void CreateAnswer(Answer answer);
         //bool ExternalPlatformExists(int externalPlatformId);
 
         // Answers
