@@ -1,0 +1,13 @@
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\bin\Debug\net8.0\RabbitMQMessage.deps.json
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\bin\Debug\net8.0\RabbitMQMessage.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\bin\Debug\net8.0\RabbitMQMessage.pdb
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\RabbitMQMessage.csproj.AssemblyReference.cache
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\RabbitMQMessage.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\RabbitMQMessage.AssemblyInfoInputs.cache
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\RabbitMQMessage.AssemblyInfo.cs
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\RabbitMQMessage.csproj.CoreCompileInputs.cache
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\RabbitMQMessage.sourcelink.json
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\RabbitMQMessage.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\refint\RabbitMQMessage.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\RabbitMQMessage.pdb
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQMessage\obj\Debug\net8.0\ref\RabbitMQMessage.dll

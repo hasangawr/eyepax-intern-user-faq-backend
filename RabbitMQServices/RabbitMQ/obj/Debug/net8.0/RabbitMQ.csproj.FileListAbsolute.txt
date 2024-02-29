@@ -1,0 +1,13 @@
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\bin\Debug\net8.0\RabbitMQ.deps.json
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\bin\Debug\net8.0\RabbitMQ.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\bin\Debug\net8.0\RabbitMQ.pdb
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\RabbitMQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\RabbitMQ.AssemblyInfoInputs.cache
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\RabbitMQ.AssemblyInfo.cs
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\RabbitMQ.csproj.CoreCompileInputs.cache
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\RabbitMQ.sourcelink.json
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\RabbitMQ.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\refint\RabbitMQ.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\RabbitMQ.pdb
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\ref\RabbitMQ.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\RabbitMQServices\RabbitMQ\obj\Debug\net8.0\RabbitMQ.csproj.AssemblyReference.cache
