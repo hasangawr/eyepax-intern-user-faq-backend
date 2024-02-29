@@ -15,7 +15,8 @@ namespace UserDataAccessLayer.UserAppRepo
         Task<InternalUser> GetInternalUserAsync(Guid id);
         Task UpdateUserAsync(InternalUser user);
         Task DeleteUserAsync(Guid id);
-        Task CreateUserAsync(InternalUser user);
+        Task<InternalUser> CreateUserAsync(InternalUser user);
         bool InternalUserExistsAsync(Guid id);
+        Task<bool> IsUsernameUnique(string InputUsername);
     }
 }
