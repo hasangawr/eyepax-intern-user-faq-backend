@@ -1,4 +1,6 @@
-﻿using UserBusinessLogicLayer.PasswordServices;
+﻿using Microsoft.AspNetCore.Identity;
+using System.Formats.Asn1;
+using UserBusinessLogicLayer.PasswordServices;
 using UserDataAccessLayer.Entities;
 using UserDataAccessLayer.UserAppRepo;
 
@@ -13,8 +15,8 @@ namespace UserBusinessLogicLayer
             _userRepo = userRepo;
             _pwServices = pwServices;
         }
-        public void CreateUserAsync(PostUser postUser)
-        {
+        public async Task<InternalUser> CreateUserAsync(PostUser postUser)
+        {/*
             var user = new InternalUser()
             {
                 Id = Guid.NewGuid(),
@@ -24,7 +26,33 @@ namespace UserBusinessLogicLayer
                 Email = postUser.Email,
                 UserName = postUser.UserName
             };
-            _userRepo.CreateUserAsync(user);
+            _userRepo.CreateUserAsync(user);*/
+
+            string username = postUser.UserName;
+            bool isUsernameUnique = await _userRepo.IsUsernameUnique(username);
+            
+            if (isUsernameUnique)
+            {
+                string passwordHash = _pwServices.Hash(postUser.Password);
+                InternalUser user = new InternalUser()
+                {
+                    Id = Guid.NewGuid(),
+                    FirstName = postUser.FirstName,
+                    LastName = postUser.LastName,
+                    Password = passwordHash,
+                    Email = postUser.Email,
+                    UserName = postUser.UserName
+                };
+                InternalUser createdUser = await _userRepo.CreateUserAsync(user);
+                return createdUser;
+
+            }
+            else
+            {
+                //here's an issue with the adding a user with a non-unique username
+                throw new InvalidOperationException("Username already exists!");
+            }
+
         }
 
         public void DeleteUserAsync(Guid id)
