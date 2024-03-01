@@ -44,7 +44,7 @@ namespace FaqService.Api.Controllers
 
 
         [HttpPost("questions")]
-        public ActionResult CreateQuestion(int userId, QuestionCreateDto questionCreateDto)
+        public ActionResult CreateQuestion(Guid userId, QuestionCreateDto questionCreateDto)
         {
             if (!_userService.UserExists(userId))
             {
@@ -68,6 +68,11 @@ namespace FaqService.Api.Controllers
         [HttpGet("questions/{questionId}")]
         public ActionResult<QuestionReadDto> GetQuestionById(int questionId)
         {
+            if (!_questionService.QuestionExists(questionId))
+            {
+                return NotFound("Question not found");
+            }
+
             return Ok(_questionService.GetQuestion(questionId));
         }
 
@@ -112,7 +117,7 @@ namespace FaqService.Api.Controllers
 
 
         [HttpGet("questions/{questionId}/answers")]
-        public ActionResult<IEnumerable<AnswerReadDto>> GetQuestionAnswers(int userId, int questionId)
+        public ActionResult<IEnumerable<AnswerReadDto>> GetQuestionAnswers(Guid userId, int questionId)
         {
             return Ok(_answerService.GetQuestionAnswers(userId, questionId));
         }
@@ -120,7 +125,7 @@ namespace FaqService.Api.Controllers
 
         [HttpPost("questions/{questionId}/answers")]
         public ActionResult AddQuestionAnswers
-            (int userId, int questionId, AnswerCreateDto answerCreateDto)
+            (Guid userId, int questionId, AnswerCreateDto answerCreateDto)
         {
             if (!_userService.UserExists(userId))
             {
@@ -148,7 +153,7 @@ namespace FaqService.Api.Controllers
 
         [HttpPut("questions/{questionId}/answers/{answerId}")]
         public ActionResult<AnswerReadDto> UpdateAnswer
-            (int userId, int answerId, int questionId, AnswerCreateDto answerCreateDto)
+            (Guid userId, int answerId, int questionId, AnswerCreateDto answerCreateDto)
         {
 
             if (!_questionService.QuestionExists(questionId))
@@ -207,7 +212,7 @@ namespace FaqService.Api.Controllers
 
         // VOTES
         [HttpPost("votes/{answerId}")]
-        public ActionResult UpdateVotes(int userId, int answerId, VoteCreateDto voteCreateDto)
+        public ActionResult UpdateVotes(Guid userId, int answerId, VoteCreateDto voteCreateDto)
         {
             if (!_userService.UserExists(userId))
             {

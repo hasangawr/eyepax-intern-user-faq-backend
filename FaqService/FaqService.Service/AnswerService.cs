@@ -22,7 +22,7 @@ namespace FaqService.Service
             _mapper = mapper;
         }
 
-        public void AddQuestionAnswers(int userId, int questionId, AnswerCreateDto answerCreateDto)
+        public void AddQuestionAnswers(Guid userId, int questionId, AnswerCreateDto answerCreateDto)
         {
             if (answerCreateDto == null)
             {
@@ -46,7 +46,7 @@ namespace FaqService.Service
             _faqRepo.DeleteAnswer(answerId);
         }
 
-        public IEnumerable<AnswerReadDto> GetQuestionAnswers(int userId, int questionId)
+        public IEnumerable<AnswerReadDto> GetQuestionAnswers(Guid userId, int questionId)
         {
             var answers = _faqRepo.GetQuestionAnswers(questionId);
 
@@ -66,7 +66,7 @@ namespace FaqService.Service
             return answerReadDtos;
         }
 
-        public AnswerReadDto UpdateAnswer(int userId, int questionId, int answerId, AnswerCreateDto answerCreateDto)
+        public AnswerReadDto UpdateAnswer(Guid userId, int questionId, int answerId, AnswerCreateDto answerCreateDto)
         {
             var answer = _mapper.Map<Answer>(answerCreateDto);
 

@@ -21,7 +21,7 @@ namespace FaqService.Service
             _faqRepo = faqRepo;
             _mapper = mapper;
         }
-        public void UpdateVotes(int userId, int answerId, VoteCreateDto voteCreateDto)
+        public void UpdateVotes(Guid userId, int answerId, VoteCreateDto voteCreateDto)
         {
             var vote = _mapper.Map<Vote>(voteCreateDto);
             vote.AnswerId = answerId;

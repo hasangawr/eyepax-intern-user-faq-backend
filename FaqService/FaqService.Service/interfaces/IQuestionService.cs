@@ -11,7 +11,7 @@ namespace FaqService.Service.interfaces
 {
     public interface IQuestionService
     {
-        void CreateQuestion(int userId, QuestionCreateDto questionCreateDto);
+        void CreateQuestion(Guid userId, QuestionCreateDto questionCreateDto);
         Question DeleteQuestion(int questionId);
         IEnumerable<QuestionReadDto> GetAllQuestions();
 

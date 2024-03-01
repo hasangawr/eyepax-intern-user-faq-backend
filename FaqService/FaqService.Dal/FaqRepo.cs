@@ -94,7 +94,7 @@ namespace FaqService.Dal
             return _dbContext.Answers.Where(a => a.QuestionId == questionId);
         }
 
-        public string GetUserChoice(int answerId, int userId)
+        public string GetUserChoice(int answerId, Guid userId)
         {
             var vote = _dbContext.Votes
                             .Where(v => v.AnswerId == answerId && v.UserId == userId)
@@ -166,7 +166,7 @@ namespace FaqService.Dal
             _dbContext.SaveChanges();
         }
 
-        public bool UserExists(int userId)
+        public bool UserExists(Guid userId)
         {
             return _dbContext.Users.Any(u => u.Id == userId);
         }

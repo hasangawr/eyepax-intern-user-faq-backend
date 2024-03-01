@@ -16,6 +16,6 @@ namespace FaqService.Domain.Dtos
         public int DislikesCount { get; set; }
         public string UserChoice { get; set; } = "Default";
 
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
     }
 }

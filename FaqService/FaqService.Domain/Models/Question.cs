@@ -22,7 +22,7 @@ namespace FaqService.Domain.Models
         //public ICollection<string>? Keywords { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
 
         public User? User { get; set; }
 

@@ -20,7 +20,7 @@ namespace FaqService.Domain.Models
         public int QuestionId { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
 
         public User? User { get; set; }
         public Question? Question { get; set; }

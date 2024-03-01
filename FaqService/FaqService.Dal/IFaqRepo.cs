@@ -19,7 +19,7 @@ namespace FaqService.Dal
         IEnumerable<Question> GetAllQuestions();
         Question GetQuestion(int id);
         void CreateQuestion(Question question);
-        bool UserExists(int userId);
+        bool UserExists(Guid userId);
         void CreateUser(User user);
         void CreateAnswer(Answer answer);
         void DeleteQuestion(Question question);
@@ -32,6 +32,6 @@ namespace FaqService.Dal
         void UpdateVotes(Vote vote);
         int GetAnswerLikeCount(int id);
         int GetAnswerDislikeCount(int id);
-        string GetUserChoice(int answerId, int userId);
+        string GetUserChoice(int answerId, Guid userId);
     }
 }
