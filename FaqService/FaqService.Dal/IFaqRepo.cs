@@ -30,5 +30,8 @@ namespace FaqService.Dal
         Answer UpdateAnswer(int questionId, int answerId, Answer answer);
         void DeleteAnswer(int answerId);
         void UpdateVotes(Vote vote);
+        int GetAnswerLikeCount(int id);
+        int GetAnswerDislikeCount(int id);
+        string GetUserChoice(int answerId, int userId);
     }
 }

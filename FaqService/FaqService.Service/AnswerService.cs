@@ -46,20 +46,43 @@ namespace FaqService.Service
             _faqRepo.DeleteAnswer(answerId);
         }
 
-        public IEnumerable<AnswerReadDto> GetQuestionAnswers(int questionId)
+        public IEnumerable<AnswerReadDto> GetQuestionAnswers(int userId, int questionId)
         {
             var answers = _faqRepo.GetQuestionAnswers(questionId);
 
-            return _mapper.Map<IEnumerable<AnswerReadDto>>(answers);
+            var answerReadDtos = _mapper.Map<IEnumerable<AnswerReadDto>>(answers);
+
+            foreach (var answer in answerReadDtos)
+            {
+                var likes = _faqRepo.GetAnswerLikeCount(answer.Id);
+                var dislikes = _faqRepo.GetAnswerDislikeCount(answer.Id);
+                var userChoice = _faqRepo.GetUserChoice(answer.Id, userId);
+
+                answer.LikesCount = likes;
+                answer.DislikesCount = dislikes;
+                answer.UserChoice = userChoice;
+            }
+
+            return answerReadDtos;
         }
 
-        public AnswerReadDto UpdateAnswer(int questionId, int answerId, AnswerCreateDto answerCreateDto)
+        public AnswerReadDto UpdateAnswer(int userId, int questionId, int answerId, AnswerCreateDto answerCreateDto)
         {
             var answer = _mapper.Map<Answer>(answerCreateDto);
 
             var result = _faqRepo.UpdateAnswer(questionId, answerId, answer);
 
-            return _mapper.Map<AnswerReadDto>(result);
+            var resultMapped = _mapper.Map<AnswerReadDto>(result);
+
+            var likes = _faqRepo.GetAnswerLikeCount(resultMapped.Id);
+            var dislikes = _faqRepo.GetAnswerDislikeCount(resultMapped.Id);
+            var userChoice = _faqRepo.GetUserChoice(resultMapped.Id, userId);
+
+            resultMapped.LikesCount = likes;
+            resultMapped.DislikesCount = dislikes;
+            resultMapped.UserChoice = userChoice;
+
+            return resultMapped;
         }
     }
 }

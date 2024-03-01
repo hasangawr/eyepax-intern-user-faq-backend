@@ -112,9 +112,9 @@ namespace FaqService.Api.Controllers
 
 
         [HttpGet("questions/{questionId}/answers")]
-        public ActionResult<IEnumerable<AnswerReadDto>> GetQuestionAnswers(int questionId)
+        public ActionResult<IEnumerable<AnswerReadDto>> GetQuestionAnswers(int userId, int questionId)
         {
-            return Ok(_answerService.GetQuestionAnswers(questionId));
+            return Ok(_answerService.GetQuestionAnswers(userId, questionId));
         }
 
 
@@ -148,7 +148,7 @@ namespace FaqService.Api.Controllers
 
         [HttpPut("questions/{questionId}/answers/{answerId}")]
         public ActionResult<AnswerReadDto> UpdateAnswer
-            (int answerId, int questionId, AnswerCreateDto answerCreateDto)
+            (int userId, int answerId, int questionId, AnswerCreateDto answerCreateDto)
         {
 
             if (!_questionService.QuestionExists(questionId))
@@ -165,7 +165,7 @@ namespace FaqService.Api.Controllers
 
             try
             {
-                answerReadDto = _answerService.UpdateAnswer(questionId, answerId, answerCreateDto);
+                answerReadDto = _answerService.UpdateAnswer(userId, questionId, answerId, answerCreateDto);
 
             }
             catch (Exception ex)

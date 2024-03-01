@@ -67,6 +67,16 @@ namespace FaqService.Dal
             return questions;
         }
 
+        public int GetAnswerDislikeCount(int id)
+        {
+            return _dbContext.Votes.Count(v => v.AnswerId == id && v.VoteType == "Dislike");
+        }
+
+        public int GetAnswerLikeCount(int id)
+        {
+            return _dbContext.Votes.Count(v => v.AnswerId == id && v.VoteType == "Like"); ;
+        }
+
         public IEnumerable<Question> GetFrequentlyAskedQuestions()
         {
             throw new NotImplementedException();
@@ -82,6 +92,20 @@ namespace FaqService.Dal
         public IEnumerable<Answer> GetQuestionAnswers(int questionId)
         {
             return _dbContext.Answers.Where(a => a.QuestionId == questionId);
+        }
+
+        public string GetUserChoice(int answerId, int userId)
+        {
+            var vote = _dbContext.Votes
+                            .Where(v => v.AnswerId == answerId && v.UserId == userId)
+                            .FirstOrDefault();
+
+            if(vote != null) 
+            {
+                return vote.VoteType;
+            }
+
+            return "Default";
         }
 
         public bool QuestionExists(int questionId)

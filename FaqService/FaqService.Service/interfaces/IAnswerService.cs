@@ -18,7 +18,7 @@ namespace FaqService.Service.interfaces
         //IEnumerable<QuestionReadDto> GetAllQuestions();
         //QuestionReadDto GetQuestion(int questionId);
 
-        IEnumerable<AnswerReadDto> GetQuestionAnswers(int questionId);
-        AnswerReadDto UpdateAnswer(int questionId, int answerId, AnswerCreateDto answerCreateDto);
+        IEnumerable<AnswerReadDto> GetQuestionAnswers(int userId, int questionId);
+        AnswerReadDto UpdateAnswer(int userId, int questionId, int answerId, AnswerCreateDto answerCreateDto);
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FaqService.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8928f8b611a0232b021682603bb0e0812af70768")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9101f92b677f9c7543ac5cef20520c06a22ffe6")]
 [assembly: System.Reflection.AssemblyProductAttribute("FaqService.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FaqService.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
