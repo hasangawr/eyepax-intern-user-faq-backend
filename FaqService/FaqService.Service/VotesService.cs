@@ -1,5 +1,7 @@
-﻿using FaqService.Dal;
+﻿using AutoMapper;
+using FaqService.Dal;
 using FaqService.Domain.Dtos;
+using FaqService.Domain.Models;
 using FaqService.Service.interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,13 +13,20 @@ namespace FaqService.Service
 {
     public class VotesService : IVotesService
     {
-        public VotesService(IFaqRepo faqRepo) 
+        private readonly IFaqRepo _faqRepo;
+        private readonly IMapper _mapper;
+
+        public VotesService(IFaqRepo faqRepo, IMapper mapper) 
         {
             _faqRepo = faqRepo;
+            _mapper = mapper;
         }
-        public void UpdateVotes(int userId, int answerId, VoteCreateDto voteCreateDto)
+        public void UpdateVotes(Guid userId, int answerId, VoteCreateDto voteCreateDto)
         {
-            throw new NotImplementedException();
+            var vote = _mapper.Map<Vote>(voteCreateDto);
+            vote.AnswerId = answerId;
+            vote.UserId = userId;
+            _faqRepo.UpdateVotes(vote);
         }
     }
 }

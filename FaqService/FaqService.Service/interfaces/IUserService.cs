@@ -9,6 +9,6 @@ namespace FaqService.Service.interfaces
 {
     public interface IUserService
     {
-        public bool UserExists(int userId);
+        public bool UserExists(Guid userId);
     }
 }

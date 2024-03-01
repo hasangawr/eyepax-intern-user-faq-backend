@@ -19,6 +19,8 @@ namespace FaqService.Domain.Profiles
             CreateMap<Question, QuestionReadDto>();
             CreateMap<Answer, AnswerReadDto>();
             CreateMap<AnswerCreateDto, Answer>();
+            CreateMap<VoteCreateDto, Vote>();
+            CreateMap<Vote, VoteReadDto>();
         }
     }
 }

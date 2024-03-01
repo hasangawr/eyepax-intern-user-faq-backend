@@ -23,7 +23,7 @@ namespace FaqService.Service
             _mapper = mapper;
         }
 
-        public void CreateQuestion(int userId, QuestionCreateDto questionCreateDto)
+        public void CreateQuestion(Guid userId, QuestionCreateDto questionCreateDto)
         {
             if (questionCreateDto == null)
             {

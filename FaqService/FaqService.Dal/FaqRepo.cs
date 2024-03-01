@@ -67,6 +67,16 @@ namespace FaqService.Dal
             return questions;
         }
 
+        public int GetAnswerDislikeCount(int id)
+        {
+            return _dbContext.Votes.Count(v => v.AnswerId == id && v.VoteType == "Dislike");
+        }
+
+        public int GetAnswerLikeCount(int id)
+        {
+            return _dbContext.Votes.Count(v => v.AnswerId == id && v.VoteType == "Like"); ;
+        }
+
         public IEnumerable<Question> GetFrequentlyAskedQuestions()
         {
             throw new NotImplementedException();
@@ -82,6 +92,20 @@ namespace FaqService.Dal
         public IEnumerable<Answer> GetQuestionAnswers(int questionId)
         {
             return _dbContext.Answers.Where(a => a.QuestionId == questionId);
+        }
+
+        public string GetUserChoice(int answerId, Guid userId)
+        {
+            var vote = _dbContext.Votes
+                            .Where(v => v.AnswerId == answerId && v.UserId == userId)
+                            .FirstOrDefault();
+
+            if(vote != null) 
+            {
+                return vote.VoteType;
+            }
+
+            return "Default";
         }
 
         public bool QuestionExists(int questionId)
@@ -125,7 +149,24 @@ namespace FaqService.Dal
                             .FirstOrDefault();
         }
 
-        public bool UserExists(int userId)
+
+        public void UpdateVotes(Vote vote)
+        {
+            var voteInDb = _dbContext.Votes.Where(v => v.AnswerId == vote.AnswerId && v.UserId == vote.UserId)
+                .FirstOrDefault();
+
+            if (voteInDb != null) 
+            {
+                voteInDb.VoteType = vote.VoteType;
+                _dbContext.SaveChanges();
+                return;
+            }
+
+            _dbContext.Votes.Add(vote);
+            _dbContext.SaveChanges();
+        }
+
+        public bool UserExists(Guid userId)
         {
             return _dbContext.Users.Any(u => u.Id == userId);
         }
