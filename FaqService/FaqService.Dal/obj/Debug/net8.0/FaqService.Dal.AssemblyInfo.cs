@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FaqService.Dal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b075cd675412b9721cfe1f6babbf2275ababd3e")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ac0f92e12b7b93c04e77ebd2b6b8c7ff92b346a")]
->>>>>>> bb788495d5ef1b8ad12f7619c995b5ce4da9e16c
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00d815254c746c9e0c3a2b239a0ed01a70faccab")]
 [assembly: System.Reflection.AssemblyProductAttribute("FaqService.Dal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FaqService.Dal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
