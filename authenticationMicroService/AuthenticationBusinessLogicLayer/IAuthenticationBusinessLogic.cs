@@ -6,5 +6,6 @@ namespace AuthenticationBusinessLogicLayer
     public interface IAuthenticationBusinessLogic
     {
         Task<string> Authenticate(ReqUser model);
+       
     }
 }

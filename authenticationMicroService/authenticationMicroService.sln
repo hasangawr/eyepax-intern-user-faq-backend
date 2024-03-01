@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "authenticationAPIEndPoint", "authenticationAPIEndPoint\authenticationAPIEndPoint.csproj", "{BD9EED24-71B7-4250-A0E4-8934AB148654}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "authenticationAPIEndPoint", "authenticationAPIEndPoint\authenticationAPIEndPoint.csproj", "{BD9EED24-71B7-4250-A0E4-8934AB148654}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationBusinessLogicLayer", "AuthenticationBusinessLogicLayer\AuthenticationBusinessLogicLayer.csproj", "{EBF936F0-8A61-4F90-84D5-2C43C22AD465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationBusinessLogicLayer", "AuthenticationBusinessLogicLayer\AuthenticationBusinessLogicLayer.csproj", "{EBF936F0-8A61-4F90-84D5-2C43C22AD465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationDataAccessLayer", "AuthenticationDataAccessLayer\AuthenticationDataAccessLayer.csproj", "{0C54694C-B03F-4CF6-A343-2EF3464800B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationDataAccessLayer", "AuthenticationDataAccessLayer\AuthenticationDataAccessLayer.csproj", "{0C54694C-B03F-4CF6-A343-2EF3464800B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

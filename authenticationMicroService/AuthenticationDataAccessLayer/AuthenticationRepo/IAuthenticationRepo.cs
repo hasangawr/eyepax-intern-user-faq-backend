@@ -9,5 +9,6 @@ namespace AuthenticationDataAccessLayer.AuthenticationRepo
     public interface IAuthenticationRepo
     {
         public Task<Entities.User> GetUserAsync(string uName);
+        Task SaveUser(Guid Id, string UserName, string Password);
     }
 }

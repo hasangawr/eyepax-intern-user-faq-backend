@@ -351,3 +351,9 @@ C:\Users\DamikaAlwis\Videos\Project\eyepax-intern-user-faq-backend\UserMicroServ
 C:\Users\DamikaAlwis\Videos\Project\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\obj\Debug\net8.0\UserMicroServiceAPIEndPoint.csproj.CopyComplete
 C:\Users\DamikaAlwis\Videos\Project\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\obj\Debug\net8.0\UserMicroServiceAPIEndPoint.genruntimeconfig.cache
 C:\Users\DamikaAlwis\Videos\Project\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\obj\Debug\net8.0\ref\UserMicroServiceAPIEndPoint.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\bin\Debug\net8.0\MassTransit.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\bin\Debug\net8.0\MassTransit.Abstractions.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\bin\Debug\net8.0\MassTransit.AspNetCoreIntegration.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\bin\Debug\net8.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\UserMicroService\UserMicroServiceAPIEndPoint\bin\Debug\net8.0\RabbitMQ.Client.dll

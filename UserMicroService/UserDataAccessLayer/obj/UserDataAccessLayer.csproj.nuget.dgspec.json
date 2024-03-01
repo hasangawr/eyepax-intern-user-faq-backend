@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DamikaAlwis\\Videos\\Project\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {}
+    "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DamikaAlwis\\Videos\\Project\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
+    "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DamikaAlwis\\Videos\\Project\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
+        "projectUniqueName": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
         "projectName": "UserDataAccessLayer",
-        "projectPath": "C:\\Users\\DamikaAlwis\\Videos\\Project\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\DamikaAlwis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DamikaAlwis\\Videos\\Project\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\obj\\",
+        "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\",
+        "outputPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DamikaAlwis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NusalMuthuthanthrige\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\RabbitMQServices\\RabbitMqLocalNugets": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +49,18 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.1.3, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.1.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -89,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

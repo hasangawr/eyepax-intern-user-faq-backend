@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System.Formats.Asn1;
+﻿
 using UserBusinessLogicLayer.PasswordServices;
+using UserBusinessLogicLayer.RabbitServices;
 using UserDataAccessLayer.Entities;
 using UserDataAccessLayer.UserAppRepo;
 
@@ -10,23 +10,20 @@ namespace UserBusinessLogicLayer
     {
         private readonly IUserRepo _userRepo;
         private readonly IPasswordHasher _pwServices;
-        public UserServices(IUserRepo userRepo, IPasswordHasher pwServices)
+        
+        private readonly IMessageBusClient _messageClient;
+
+
+        public UserServices(IUserRepo userRepo, IPasswordHasher pwServices, IMessageBusClient messageClient )
         {
             _userRepo = userRepo;
             _pwServices = pwServices;
+           
+            _messageClient = messageClient;
+            
         }
         public async Task<InternalUser> CreateUserAsync(PostUser postUser)
-        {/*
-            var user = new InternalUser()
-            {
-                Id = Guid.NewGuid(),
-                FirstName = postUser.FirstName,
-                LastName = postUser.LastName,
-                Password = _pwServices.Hash(postUser.Password),
-                Email = postUser.Email,
-                UserName = postUser.UserName
-            };
-            _userRepo.CreateUserAsync(user);*/
+        {
 
             string username = postUser.UserName;
             bool isUsernameUnique = await _userRepo.IsUsernameUnique(username);
@@ -41,9 +38,17 @@ namespace UserBusinessLogicLayer
                     LastName = postUser.LastName,
                     Password = passwordHash,
                     Email = postUser.Email,
-                    UserName = postUser.UserName
+                    UserName = postUser.UserName,
+                    Role = postUser.Role
                 };
                 InternalUser createdUser = await _userRepo.CreateUserAsync(user);
+
+                //synchronizing authentication Db
+                var pubUser = new UserMessage() { Id = user.Id, UserName = user.UserName, Password = user.Password };
+                _messageClient.PublishNewUser(pubUser);
+             
+
+
                 return createdUser;
 
             }
