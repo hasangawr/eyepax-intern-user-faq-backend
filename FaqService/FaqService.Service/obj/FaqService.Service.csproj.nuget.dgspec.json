@@ -4,14 +4,99 @@
     "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {}
   },
   "projects": {
-    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
-        "projectName": "FaqService.Service",
-        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+        "projectName": "FaqService.Dal",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
         "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
-        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\obj\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+                "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
+        "projectName": "FaqService.Domain",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
+        "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +125,95 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
+        "projectName": "FaqService.Service",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
+        "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
+                "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.2, )"

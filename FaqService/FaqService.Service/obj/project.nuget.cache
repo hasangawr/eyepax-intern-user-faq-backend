@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kuX180D0+OoufmZhXGGofUhMQAGuvfkMQxsprKXGnKjFj9HBDaHWDDMkNZ3t9R4l+LHd1ZyxFQjuUhPvhXNj+w==",
+  "dgSpecHash": "NMfP5rADyXtt2T1XQWaxuuQJoRrGouBUNXcS7KDKJdbbkDMgzMeO+poGQHoCf+YyxlN5AqO1Am6Pok1rF46Q3Q==",
   "success": true,
   "projectFilePath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -11,6 +13,7 @@
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0\\microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.5.0\\microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.5.0\\microsoft.codeanalysis.workspaces.common.4.5.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
