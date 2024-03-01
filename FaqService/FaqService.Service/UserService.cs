@@ -17,7 +17,7 @@ namespace FaqService.Service
             _faqRepo = faqRepo;
         }
 
-        public bool UserExists(int userId)
+        public bool UserExists(Guid userId)
         {
             return _faqRepo.UserExists(userId);
         }

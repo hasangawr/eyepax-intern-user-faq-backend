@@ -11,7 +11,7 @@ namespace FaqService.Domain.Models
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public int ExternalId { get; set; }
         public string Name { get; set; } = string.Empty;
 

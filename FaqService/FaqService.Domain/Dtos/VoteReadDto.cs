@@ -13,6 +13,6 @@ namespace FaqService.Domain.Dtos
 
         public int AnswerId { get; set; }
 
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
     }
 }

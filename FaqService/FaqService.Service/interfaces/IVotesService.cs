@@ -9,6 +9,6 @@ namespace FaqService.Service.interfaces
 {
     public interface IVotesService
     {
-        void UpdateVotes(int userId, int answerId, VoteCreateDto voteCreateDto);
+        void UpdateVotes(Guid userId, int answerId, VoteCreateDto voteCreateDto);
     }
 }

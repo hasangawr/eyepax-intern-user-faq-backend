@@ -9,7 +9,7 @@ namespace FaqService.Service.interfaces
 {
     public interface IAnswerService
     {
-        void AddQuestionAnswers(int userId, int questionId, AnswerCreateDto answerCreateDto);
+        void AddQuestionAnswers(Guid userId, int questionId, AnswerCreateDto answerCreateDto);
         bool AnswerExists(int questionId, int answerId);
         void DeleteAnswer(int answerId);
 
@@ -18,7 +18,7 @@ namespace FaqService.Service.interfaces
         //IEnumerable<QuestionReadDto> GetAllQuestions();
         //QuestionReadDto GetQuestion(int questionId);
 
-        IEnumerable<AnswerReadDto> GetQuestionAnswers(int questionId);
-        AnswerReadDto UpdateAnswer(int questionId, int answerId, AnswerCreateDto answerCreateDto);
+        IEnumerable<AnswerReadDto> GetQuestionAnswers(Guid userId, int questionId);
+        AnswerReadDto UpdateAnswer(Guid userId, int questionId, int answerId, AnswerCreateDto answerCreateDto);
     }
 }
