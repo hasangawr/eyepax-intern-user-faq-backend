@@ -176,6 +176,12 @@ namespace FaqService.Dal
                     UserId = 2
                 },
             };
+
+            foreach (var vote in votes)
+            {
+                _faqRepo.UpdateVotes(vote);
+                _faqRepo.SaveChanges();
+            }
         }
     }
 }

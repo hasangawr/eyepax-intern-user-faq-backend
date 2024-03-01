@@ -94,6 +94,31 @@ namespace FaqService.Dal.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("FaqService.Domain.Models.Vote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AnswerId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("VoteType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnswerId");
+
+                    b.ToTable("Votes");
+                });
+
             modelBuilder.Entity("FaqService.Domain.Models.Answer", b =>
                 {
                     b.HasOne("FaqService.Domain.Models.Question", "Question")
@@ -122,6 +147,22 @@ namespace FaqService.Dal.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("FaqService.Domain.Models.Vote", b =>
+                {
+                    b.HasOne("FaqService.Domain.Models.Answer", "Answer")
+                        .WithMany("Votes")
+                        .HasForeignKey("AnswerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Answer");
+                });
+
+            modelBuilder.Entity("FaqService.Domain.Models.Answer", b =>
+                {
+                    b.Navigation("Votes");
                 });
 
             modelBuilder.Entity("FaqService.Domain.Models.Question", b =>

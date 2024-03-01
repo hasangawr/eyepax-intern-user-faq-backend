@@ -25,6 +25,6 @@ namespace FaqService.Domain.Models
         public User? User { get; set; }
         public Question? Question { get; set; }
 
-
+        public ICollection<Vote> Votes { get; set; } = new List<Vote>();
     }
 }

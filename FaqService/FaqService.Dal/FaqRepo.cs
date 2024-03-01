@@ -125,6 +125,23 @@ namespace FaqService.Dal
                             .FirstOrDefault();
         }
 
+
+        public void UpdateVotes(Vote vote)
+        {
+            var voteInDb = _dbContext.Votes.Where(v => v.AnswerId == vote.AnswerId && v.UserId == vote.UserId)
+                .FirstOrDefault();
+
+            if (voteInDb != null) 
+            {
+                voteInDb.VoteType = vote.VoteType;
+                _dbContext.SaveChanges();
+                return;
+            }
+
+            _dbContext.Votes.Add(vote);
+            _dbContext.SaveChanges();
+        }
+
         public bool UserExists(int userId)
         {
             return _dbContext.Users.Any(u => u.Id == userId);

@@ -17,7 +17,7 @@ namespace FaqService.Dal
         public DbSet<User> Users { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Answer> Answers { get; set; }
-        //public DbSet<Comment> Comments { get; set; }
+        public DbSet<Vote> Votes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -38,6 +38,12 @@ namespace FaqService.Dal
                 .HasMany(p => p.Answers)
                 .WithOne(p => p.Question)
                 .HasForeignKey(p => p.QuestionId);
+
+            modelBuilder
+                .Entity<Answer>()
+                .HasMany(p => p.Votes)
+                .WithOne(p => p.Answer)
+                .HasForeignKey(p => p.AnswerId);
 
         }
     }

@@ -22,7 +22,8 @@ namespace FaqService.Domain.Models
         [Required]
         public int UserId { get; set; }
 
-        public User? User { get; set; }
+
         public Answer? Answer { get; set; }
+
     }
 }

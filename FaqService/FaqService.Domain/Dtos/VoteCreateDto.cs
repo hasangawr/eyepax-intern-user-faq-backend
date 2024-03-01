@@ -11,11 +11,5 @@ namespace FaqService.Domain.Dtos
     {
         [Required]
         public string VoteType { get; set; } = "default";
-
-        [Required]
-        public int AnswerId { get; set; }
-
-        [Required]
-        public int UserId { get; set; }
     }
 }

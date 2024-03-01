@@ -29,10 +29,6 @@ namespace FaqService.Dal
         bool AnswerExists(int questionId, int answerId);
         Answer UpdateAnswer(int questionId, int answerId, Answer answer);
         void DeleteAnswer(int answerId);
-        //bool ExternalPlatformExists(int externalPlatformId);
-
-        // Answers
-        //Command GetCommand(int platformId, int commandId);
-        //void CreateCommand(int platformId, Command command);
+        void UpdateVotes(Vote vote);
     }
 }
