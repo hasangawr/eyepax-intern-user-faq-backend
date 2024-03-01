@@ -1,0 +1,48 @@
+{
+  // for the User microservice
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/UserAPI",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7288
+        }
+      ],
+      "UpstreamPathTemplate": "/UserAPI",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserAPI/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7288
+        }
+      ],
+      "UpstreamPathTemplate": "/UserAPI/{id}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete" ]
+    },
+    // for the authentication mircoservice
+    {
+      "DownstreamPathTemplate": "/api/Authentication",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7036
+        }
+      ],
+      "UpstreamPathTemplate": "/Authentication",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+    // todo : add routes for the FAQ micro service
+    
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7111"
+  }
+}
