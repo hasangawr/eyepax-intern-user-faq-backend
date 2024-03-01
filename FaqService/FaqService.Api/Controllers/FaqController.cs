@@ -14,12 +14,18 @@ namespace FaqService.Api.Controllers
         private readonly IQuestionService _questionService;
         private readonly IUserService _userService;
         private readonly IAnswerService _answerService;
+        private readonly IVotesService _votesService;
 
-        public FaqController(IQuestionService questionService, IUserService userService, IAnswerService answerService)
+        public FaqController(
+            IQuestionService questionService, 
+            IUserService userService, 
+            IAnswerService answerService,
+            IVotesService votesService)
         {
             _questionService = questionService;
             _userService = userService;
             _answerService = answerService;
+            _votesService = votesService;
         }
 
         [HttpGet]
@@ -196,6 +202,28 @@ namespace FaqService.Api.Controllers
 
 
             return Ok("Answer successfully deleted");
+        }
+
+
+        // VOTES
+        [HttpPost("votes/{answerId}")]
+        public ActionResult UpdateVotes(int userId, int answerId, VoteCreateDto voteCreateDto)
+        {
+            if (!_userService.UserExists(userId))
+            {
+                return NotFound("User not found");
+            }
+
+            try
+            {
+                _votesService.UpdateVotes(userId, answerId, voteCreateDto);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok("Vote successfully updated");
         }
 
     }

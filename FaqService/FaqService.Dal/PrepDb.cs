@@ -137,6 +137,45 @@ namespace FaqService.Dal
             }
 
 
+            var votes = new List<Vote>
+            {
+                new Vote
+                {
+                    VoteType = "Like",
+                    AnswerId = 1,
+                    UserId = 1
+                },
+                new Vote
+                {
+                    VoteType = "Dislike",
+                    AnswerId = 2,
+                    UserId = 1
+                },
+                new Vote
+                {
+                    VoteType = "Like",
+                    AnswerId = 3,
+                    UserId = 2
+                },
+                new Vote
+                {
+                    VoteType = "Like",
+                    AnswerId = 3,
+                    UserId = 1
+                },
+                new Vote
+                {
+                    VoteType = "Like",
+                    AnswerId = 2,
+                    UserId = 2
+                },
+                new Vote
+                {
+                    VoteType = "Dislike",
+                    AnswerId = 3,
+                    UserId = 2
+                },
+            };
         }
     }
 }

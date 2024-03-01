@@ -20,6 +20,7 @@ builder.Services.AddScoped<IFaqRepo, FaqRepo>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IQuestionService, QuestionService>();
 builder.Services.AddScoped<IAnswerService, AnswerService>();
+builder.Services.AddScoped<IVotesService, VotesService>();
 builder.Services.AddAutoMapper(Assembly.Load("FaqService.Domain"));
 
 builder.Services.AddControllers();
