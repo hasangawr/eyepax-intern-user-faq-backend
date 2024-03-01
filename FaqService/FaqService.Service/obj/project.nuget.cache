@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BpEP2ujU+9dxAGEmybE0SfEEerTyoLQO2JvQbyEl/+eNaCo5Pmn5P4UOnGwbuBnphG6Ps3K4kKKCDvwsBs/NAw==",
+  "dgSpecHash": "KiwISTiDChXr7q1+jVcWFqmWsZQup/6M2UguWXDWeSYPCyaJPym0sS2MemOmtMw/8lUfpjl5V9uwcq/+fmTEUA==",
   "success": true,
   "projectFilePath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -11,6 +13,7 @@
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0\\microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.5.0\\microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.5.0\\microsoft.codeanalysis.workspaces.common.4.5.0.nupkg.sha512",
+    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
@@ -46,5 +49,12 @@
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

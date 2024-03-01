@@ -24,7 +24,7 @@ namespace AuthenticationBusinessLogicLayer
         public async Task<string> Authenticate(ReqUser user)
         {
             var valid = await AuthRepo.GetUserAsync(user.UserName);
-            if (user != null && _pwServices.Verify(valid.Password, user.Password))
+            if (valid != null && user != null && _pwServices.Verify(valid.Password, user.Password))
             {
                 
                 var tokenHandler = new JwtSecurityTokenHandler();
@@ -47,5 +47,7 @@ namespace AuthenticationBusinessLogicLayer
             }
             return null;
         }
+
+
     }
 }

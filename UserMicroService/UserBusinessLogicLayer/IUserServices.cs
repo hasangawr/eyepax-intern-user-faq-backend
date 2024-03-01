@@ -10,6 +10,6 @@ namespace UserBusinessLogicLayer
         Task<InternalUser> GetInternalUserAsync(Guid id);
         Task UpdateUserAsync(Guid id, PostUser postUser);
         void DeleteUserAsync(Guid id);
-        void CreateUserAsync(PostUser postUser);
+        Task<InternalUser> CreateUserAsync (PostUser postUser);
     }
 }

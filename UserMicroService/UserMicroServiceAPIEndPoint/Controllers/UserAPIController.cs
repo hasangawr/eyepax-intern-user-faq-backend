@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using UserBusinessLogicLayer;
 using UserBusinessLogicLayer.TokenValidationServices;
@@ -12,6 +13,7 @@ namespace UserMicroServiceAPIEndPoint.Controllers
     {
         private readonly IUserServices _service;
         private readonly ITokenServices _tokenServices;
+
 
         public UserAPIController(IUserServices service, ITokenServices tokenServices)
         {
@@ -105,17 +107,43 @@ namespace UserMicroServiceAPIEndPoint.Controllers
         // POST: api/Users
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public ActionResult PostInternalUser(PostUser postUser)
+        public async Task<IActionResult> PostInternalUser(PostUser postUser)
         {
-            var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+            /*var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
             var (isValid, principal) = _tokenServices.ValidateToken(token);
             if (token != null && isValid)
             {
                 _service.CreateUserAsync(postUser);
                 return Ok();
             }
-            return BadRequest();
- 
+            return BadRequest();*/
+
+            try
+            {
+
+                InternalUser createdUser = await _service.CreateUserAsync(postUser);
+                return StatusCode(200, new { msg = "Registration successful!", user = createdUser });
+
+
+            }
+            catch (InvalidOperationException ex)
+            {
+                return StatusCode(400, new { msg = ex.Message });
+            }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, new { msg = "Database error!" });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, new { msg = "Error regestering user!" });
+
+            }
+
+
+
         }
 
         // DELETE: api/Users/5

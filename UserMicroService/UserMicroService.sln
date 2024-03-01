@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMicroServiceAPIEndPoint", "UserMicroServiceAPIEndPoint\UserMicroServiceAPIEndPoint.csproj", "{A64C70DA-4C30-4776-8D65-28177D7EDED5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserMicroServiceAPIEndPoint", "UserMicroServiceAPIEndPoint\UserMicroServiceAPIEndPoint.csproj", "{A64C70DA-4C30-4776-8D65-28177D7EDED5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserBusinessLogicLayer", "UserBusinessLogicLayer\UserBusinessLogicLayer.csproj", "{D0FC7636-960E-4A96-8997-FA178EBB6367}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserBusinessLogicLayer", "UserBusinessLogicLayer\UserBusinessLogicLayer.csproj", "{D0FC7636-960E-4A96-8997-FA178EBB6367}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDataAccessLayer", "UserDataAccessLayer\UserDataAccessLayer.csproj", "{41FEF707-F31D-469E-B5B4-6B0C2F777027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserDataAccessLayer", "UserDataAccessLayer\UserDataAccessLayer.csproj", "{41FEF707-F31D-469E-B5B4-6B0C2F777027}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

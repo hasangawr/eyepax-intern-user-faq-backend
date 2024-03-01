@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FaqService.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30d3cdc7e1995cf292b228b676441ef94d2ab211")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0b5442522de950667149dffb9804ebecb144e2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("FaqService.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FaqService.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

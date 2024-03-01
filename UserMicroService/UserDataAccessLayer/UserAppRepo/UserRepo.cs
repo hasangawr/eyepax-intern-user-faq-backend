@@ -17,10 +17,18 @@ namespace UserDataAccessLayer.UserAppRepo
             _userMapper = userMapper;
             _mapper = _userMapper.InitializeMapper();
         }
-        public async Task CreateUserAsync(InternalUser user)
+        public async Task<InternalUser> CreateUserAsync(InternalUser user)
         {
             await _context.internalUsers.AddAsync(user);
             await _context.SaveChangesAsync();
+            return user;
+        }
+
+        public async Task<bool> IsUsernameUnique(string InputUsername)
+        {
+
+            bool result = await _context.internalUsers.AnyAsync(u => u.UserName == InputUsername);
+            return !result;
         }
 
         public async Task DeleteUserAsync(Guid id)
