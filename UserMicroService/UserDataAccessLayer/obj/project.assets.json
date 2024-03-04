@@ -2995,19 +2995,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\": {}
+    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
+      "projectUniqueName": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
       "projectName": "UserDataAccessLayer",
-      "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
-      "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\obj\\",
+      "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\",
+      "outputPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NusalMuthuthanthrige\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3015,6 +3020,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\RabbitMQServices\\RabbitMqLocalNugets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
