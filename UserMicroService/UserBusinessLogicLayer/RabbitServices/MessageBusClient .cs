@@ -21,8 +21,8 @@ namespace UserBusinessLogicLayer.RabbitServices
             _configuration = configuration;
             var factory = new ConnectionFactory()
             {
-                HostName = "localhost",
-                Port =5672,
+                HostName = _configuration["RabbitMQ:HostName"],
+                Port = int.Parse(_configuration["RabbitMQ:Port"])
             };
 
             try

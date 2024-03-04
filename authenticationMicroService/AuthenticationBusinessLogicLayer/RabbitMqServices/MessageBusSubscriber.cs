@@ -31,8 +31,8 @@ namespace AuthenticationBusinessLogicLayer.RabbitMqServices
         {
             var factory = new ConnectionFactory()
             {
-                HostName = "localhost",
-                Port = 5672,
+                HostName = _configuration["RabbitMQ:HostName"],
+                Port = int.Parse(_configuration["RabbitMQ:Port"])
             };
 
             _connection = factory.CreateConnection();
