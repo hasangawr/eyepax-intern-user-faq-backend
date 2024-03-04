@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1ir3+kLEIXvUU5YW7kSxuFlVcACClByLiw6LDpifVzzttvj3lTiGP8sZFFoTddOQDTg0ai86quwmeNdjSKpj+A==",
+  "dgSpecHash": "Hie07C5NzLHwZ0tmTXgjdM4ITMhTRTt/RADJDOS7Ctba7By4Q/BQZrdGc45HrWRnf3KAYfffNFfb6oCIkccC5A==",
   "success": true,
   "projectFilePath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj",
   "expectedPackageFiles": [
@@ -40,7 +40,6 @@
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.2\\npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
-    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\rabbitmq\\1.0.0\\rabbitmq.1.0.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",

@@ -66,10 +66,6 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
-            "RabbitMQ": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[7.3.1, )"
@@ -172,10 +168,6 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.2, )"
-            },
-            "RabbitMQ": {
-              "target": "Package",
-              "version": "[1.0.0, )"
             }
           },
           "imports": [
