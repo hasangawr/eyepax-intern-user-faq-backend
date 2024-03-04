@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "6DWCaFeH6aF26asUg5m1rIVxbI8fp+d6AGwYqrW6bytJ8CabqQVHMmt5RUZEqZ+NgfaDAlxVdjBUlKkqpHo9Pg==",
+  "dgSpecHash": "Yu0ua4Q776uyW/buUW6wGDFwm7wJ4k4nCoe6hw1iNJwcTVqSTr1Plj6f9RxSF0WuNQOGbotjqEiH9bVy9p8/vA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DamikaAlwis\\source\\repos\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
+  "projectFilePath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.0\\microsoft.aspnetcore.jsonpatch.8.0.0.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\8.0.0\\microsoft.aspnetcore.middlewareanalysis.8.0.0.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.0.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\microsoft.extensions.diagnosticadapter\\3.1.32\\microsoft.extensions.diagnosticadapter.3.1.32.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\ocelot\\23.0.0\\ocelot.23.0.0.nupkg.sha512",
-    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.0\\microsoft.aspnetcore.jsonpatch.8.0.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\8.0.0\\microsoft.aspnetcore.middlewareanalysis.8.0.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\microsoft.extensions.diagnosticadapter\\3.1.32\\microsoft.extensions.diagnosticadapter.3.1.32.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\ocelot\\23.0.0\\ocelot.23.0.0.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

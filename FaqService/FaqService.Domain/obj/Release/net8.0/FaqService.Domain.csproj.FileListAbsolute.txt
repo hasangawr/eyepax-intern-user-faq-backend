@@ -1,0 +1,15 @@
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\bin\Release\net8.0\FaqService.Domain.deps.json
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\bin\Release\net8.0\FaqService.Domain.runtimeconfig.json
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\bin\Release\net8.0\FaqService.Domain.dll
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\bin\Release\net8.0\FaqService.Domain.pdb
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.csproj.AssemblyReference.cache
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.AssemblyInfoInputs.cache
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.AssemblyInfo.cs
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.csproj.CoreCompileInputs.cache
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.sourcelink.json
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.dll
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\refint\FaqService.Domain.dll
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.pdb
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\FaqService.Domain.genruntimeconfig.cache
+D:\Assignments\Micro Frontend\Intern_Project\test-full\FAQ-Project\FaqService\FaqService.Domain\obj\Release\net8.0\ref\FaqService.Domain.dll

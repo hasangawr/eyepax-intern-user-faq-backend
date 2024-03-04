@@ -1,6 +1,7 @@
 ﻿using FaqService.Domain.Dtos;
 using FaqService.Domain.Models;
 using FaqService.Service.interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ namespace FaqService.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class FaqController : ControllerBase
     {
         private readonly IQuestionService _questionService;

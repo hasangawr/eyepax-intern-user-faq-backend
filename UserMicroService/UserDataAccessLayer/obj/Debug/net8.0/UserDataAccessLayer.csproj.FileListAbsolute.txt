@@ -42,3 +42,18 @@ C:\Users\DamikaAlwis\Videos\Project\eyepax-intern-user-faq-backend\UserMicroServ
 C:\Users\DamikaAlwis\Videos\Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.pdb
 C:\Users\DamikaAlwis\Videos\Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.genruntimeconfig.cache
 C:\Users\DamikaAlwis\Videos\Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\ref\UserDataAccessLayer.dll
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.deps.json
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.runtimeconfig.json
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.dll
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\bin\Debug\net8.0\UserDataAccessLayer.pdb
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.csproj.AssemblyReference.cache
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.AssemblyInfoInputs.cache
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.AssemblyInfo.cs
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.sourcelink.json
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.dll
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\refint\UserDataAccessLayer.dll
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.pdb
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\UserDataAccessLayer.genruntimeconfig.cache
+D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\UserMicroService\UserDataAccessLayer\obj\Debug\net8.0\ref\UserDataAccessLayer.dll

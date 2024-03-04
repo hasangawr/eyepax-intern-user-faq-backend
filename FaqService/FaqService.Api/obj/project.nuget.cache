@@ -1,26 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "WjJQBrsuaG64N+9g9YzcWHSr28rVLRrg3U6+VB6PDyvIO12vsIjX3WiOz5OcavOofMAR8sRlKFss/+vLk2sc6g==",
-  "success": false,
-  "projectFilePath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Api\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "The local source 'D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\RabbitMQServices\\RabbitMqLocalNugets' doesn't exist.",
-      "libraryId": "AutoMapper.Extensions.Microsoft.DependencyInjection"
-    }
-  ]
-=======
-  "dgSpecHash": "M74Lp+jlx2kx+auSte4HAKIw+S4Bc791Q+aiCMZd6G5DBnDRtFXu81r7MnVEN6vfSwe/U4PWSm55zSEv5H96Lw==",
+  "dgSpecHash": "I65xSwwLVZf8MJDObVGupBG3/wjj1YCipmYBX+nW8hcHyLfX6WQAr8NnjcaUjBcjZZFg7+1hHAa4VfnGg4ZKVA==",
   "success": true,
   "projectFilePath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Api\\FaqService.Api.csproj",
   "expectedPackageFiles": [
@@ -84,5 +64,4 @@
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
   "logs": []
->>>>>>> hasanga_dev
 }
