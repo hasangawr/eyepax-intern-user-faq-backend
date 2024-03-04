@@ -43,5 +43,25 @@ namespace AuthenticationDataAccessLayer.AuthenticationRepo
             return null;
         }
 
+        public async Task DeleteUserAsync(Guid id)
+        {
+            var userToRemove = context.users.FirstOrDefault(c => c.Id == id);
+            if (userToRemove != null)
+            {
+                context.users.Remove(userToRemove);
+                await context.SaveChangesAsync();
+            }
+        }
+
+        public async Task UpdateUserAsync(Guid id, string name, string password)
+        {
+            var existingUser = await context.users.FirstOrDefaultAsync(c => c.Id == id);
+            if (existingUser != null)
+            {
+                existingUser.UserName = name;
+                existingUser.Password = password;
+                await context.SaveChangesAsync();
+            }
+        }
     }
 }

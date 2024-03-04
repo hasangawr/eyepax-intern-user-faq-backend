@@ -8,6 +8,7 @@ using AuthenticationDataAccessLayer.Entities;
 using System.Text.Json;
 using System;
 using Microsoft.Extensions.DependencyInjection;
+using System.Runtime.InteropServices;
 
 namespace AuthenticationBusinessLogicLayer.RabbitMqServices
 {
@@ -31,8 +32,8 @@ namespace AuthenticationBusinessLogicLayer.RabbitMqServices
         {
             var factory = new ConnectionFactory()
             {
-                HostName = "localhost",
-                Port = 5672,
+                HostName = _configuration["RabbitMQ:HostName"],
+                Port = int.Parse(_configuration["RabbitMQ:Port"])
             };
 
             _connection = factory.CreateConnection();
@@ -71,7 +72,23 @@ namespace AuthenticationBusinessLogicLayer.RabbitMqServices
                 {
                     var authenticationRepo = scope.ServiceProvider.GetRequiredService<IAuthenticationRepo>();
                     UserMessage newUserMessage = JsonSerializer.Deserialize<UserMessage>(notificationMessage);
-                    await authenticationRepo.SaveUser(newUserMessage.Id, newUserMessage.UserName, newUserMessage.Password);
+                    if (newUserMessage.MessageType.Equals("Add"))
+                    {
+                        await authenticationRepo.SaveUser(newUserMessage.Id, newUserMessage.UserName, newUserMessage.Password);
+                    }
+                    else if (newUserMessage.MessageType.Equals("Delete"))
+                    {
+                        await authenticationRepo.DeleteUserAsync(newUserMessage.Id);
+                    }
+                    else if (newUserMessage.MessageType.Equals("Update"))
+                    {
+                        await authenticationRepo.UpdateUserAsync(newUserMessage.Id, newUserMessage.UserName, newUserMessage.Password);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"---> Could not update the authentication user table");
+                    }
+                    
                 }
             };
 

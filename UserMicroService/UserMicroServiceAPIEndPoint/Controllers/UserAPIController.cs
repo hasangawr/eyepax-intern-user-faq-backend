@@ -25,14 +25,23 @@ namespace UserMicroServiceAPIEndPoint.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ReqResUser>>> GetReqResUsers()
         {
-            var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-            var (isValid, principal) = _tokenServices.ValidateToken(token);
-            if (token != null && isValid)
+            try 
             {
-                var users = await _service.GetAllReqResUsersAsync();
-                return Ok(users);
+                var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+                var (isValid, principal) = _tokenServices.ValidateToken(token);
+                if (token != null && isValid)
+                {
+
+                    var users = await _service.GetAllReqResUsersAsync();
+                    return Ok(users);
+                }
+                return BadRequest();
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return StatusCode(500,ex.Message);
             }
-            return BadRequest();
+
             
         }
 
@@ -40,32 +49,41 @@ namespace UserMicroServiceAPIEndPoint.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ReqResUser>> GetInternalUser(Guid id)
         {
-            var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-            var (isValid, principal) = _tokenServices.ValidateToken(token);
-            if (token != null && isValid && principal != null)
+            try
             {
-                var userIdClaim = principal?.FindFirst("UserId")?.Value;
-                if (Guid.TryParse(userIdClaim, out var userId))
+                var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+                var (isValid, principal) = _tokenServices.ValidateToken(token);
+                if (token != null && isValid && principal != null)
                 {
-                    if (userId == id)
+                    var userIdClaim = principal?.FindFirst("UserId")?.Value;
+                    if (Guid.TryParse(userIdClaim, out var userId))
                     {
-                        var internalUser = await _service.GetReqResUserAsync(id);
-
-                        if (internalUser == null)
+                        if (userId == id)
                         {
-                            return NotFound();
+                            var internalUser = await _service.GetReqResUserAsync(id);
+
+                            if (internalUser == null)
+                            {
+                                return NotFound();
+                            }
+
+                            return internalUser;
                         }
+                        else
+                        {
+                            return Forbid();
+                        }
+                    }
 
-                        return internalUser;
-                    }
-                    else
-                    {
-                        return Forbid();
-                    }
                 }
-
+                return BadRequest();
             }
-            return BadRequest();
+            catch (Exception ex) 
+            { 
+                Console.WriteLine(ex);
+                return StatusCode(500,ex.Message);
+            }
+
 
         }
 
@@ -74,33 +92,40 @@ namespace UserMicroServiceAPIEndPoint.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutInternalUser(Guid id, PostUser postUser)
         {
-            var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-            var (isValid, principal) = _tokenServices.ValidateToken(token);
-            if (token != null && isValid && principal != null)
-            {
-                var userIdClaim = principal?.FindFirst("UserId")?.Value;
-                if (Guid.TryParse(userIdClaim, out var userId))
+            try {
+                var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+                var (isValid, principal) = _tokenServices.ValidateToken(token);
+                if (token != null && isValid && principal != null)
                 {
-                    if (userId == id)
+                    var userIdClaim = principal?.FindFirst("UserId")?.Value;
+                    if (Guid.TryParse(userIdClaim, out var userId))
                     {
-                        var internalUser = await _service.GetInternalUserAsync(id);
-                        if (internalUser == null)
+                        if (userId == id)
                         {
-                            return BadRequest();
+                            var internalUser = await _service.GetInternalUserAsync(id);
+                            if (internalUser == null)
+                            {
+                                return BadRequest();
+                            }
+
+                            await _service.UpdateUserAsync(id, postUser);
+
+                            return Ok();
+                        }
+                        else
+                        {
+                            return Forbid();
                         }
 
-                        await _service.UpdateUserAsync(id, postUser);
-
-                        return Ok();
                     }
-                    else
-                    {
-                        return Forbid();
-                    }
-              
                 }
+                return BadRequest();
             }
-            return BadRequest();
+            catch (Exception ex) 
+            { 
+                Console.WriteLine(ex);
+                return StatusCode(500,ex.Message);
+            }
 
         }
 
@@ -109,15 +134,6 @@ namespace UserMicroServiceAPIEndPoint.Controllers
         [HttpPost]
         public async Task<IActionResult> PostInternalUser(PostUser postUser)
         {
-            /*var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-            var (isValid, principal) = _tokenServices.ValidateToken(token);
-            if (token != null && isValid)
-            {
-                _service.CreateUserAsync(postUser);
-                return Ok();
-            }
-            return BadRequest();*/
-
             try
             {
 
@@ -150,22 +166,41 @@ namespace UserMicroServiceAPIEndPoint.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteInternalUser(Guid id)
         {
-            var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-            var (isValid, principal) = _tokenServices.ValidateToken(token);
-            if (token != null && isValid)
+            try 
             {
-                var internalUser = await _service.GetInternalUserAsync(id);
-                if (internalUser == null)
+                var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+                var (isValid, principal) = _tokenServices.ValidateToken(token);
+                if (token != null && isValid && principal != null)
                 {
-                    return NotFound();
+                    var userIdClaim = principal?.FindFirst("UserId")?.Value;
+                    if (Guid.TryParse(userIdClaim, out var userId))
+                    {
+                        if (userId == id)
+                        {
+                            var internalUser = await _service.GetInternalUserAsync(id);
+                            if (internalUser == null)
+                            {
+                                return BadRequest();
+                            }
+
+                            _service.DeleteUserAsync(id); ;
+
+                            return Ok("User Successfully Deleted");
+                        }
+                        else
+                        {
+                            return Forbid();
+                        }
+
+                    }
                 }
-
-                _service.DeleteUserAsync(id);
-
-                return NoContent();
+                return BadRequest();
             }
-            return BadRequest();
-
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return StatusCode(500, ex.Message);
+            }
         }
     }
 }
