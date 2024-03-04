@@ -75,3 +75,42 @@ D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\Api_
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.pdb
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.genruntimeconfig.cache
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\ref\Api_Gateway_ocelot.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\appsettings.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\ocelot.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Api_Gateway_ocelot.exe
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Api_Gateway_ocelot.deps.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Api_Gateway_ocelot.runtimeconfig.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Api_Gateway_ocelot.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Api_Gateway_ocelot.pdb
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\IPAddressRange.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\bin\Debug\net8.0\Ocelot.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.csproj.AssemblyReference.cache
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.AssemblyInfoInputs.cache
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.AssemblyInfo.cs
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.csproj.CoreCompileInputs.cache
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.sourcelink.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\staticwebassets\msbuild.Api_Gateway_ocelot.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\staticwebassets\msbuild.build.Api_Gateway_ocelot.props
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Api_Gateway_ocelot.props
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Api_Gateway_ocelot.props
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\scopedcss\bundle\Api_Gateway_ocelot.styles.css
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.csproj.CopyComplete
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\refint\Api_Gateway_ocelot.dll
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.pdb
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\Api_Gateway_ocelot.genruntimeconfig.cache
+C:\Users\DamikaAlwis\Videos\eyepax-intern-user-faq-backend\Api_Gateway_ocelot\Api_Gateway_ocelot\obj\Debug\net8.0\ref\Api_Gateway_ocelot.dll

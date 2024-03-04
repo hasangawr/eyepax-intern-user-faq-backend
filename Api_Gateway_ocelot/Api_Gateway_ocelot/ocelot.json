@@ -37,9 +37,82 @@
       ],
       "UpstreamPathTemplate": "/Authentication",
       "UpstreamHttpMethod": [ "Post" ]
+    },
+    // routes for the FAQ micro service
+    {
+      "DownstreamPathTemplate": "/api/Faq",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7086
+        }
+      ],
+      "UpstreamPathTemplate": "/Faq",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Faq/questions",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7086
+        }
+      ],
+      "UpstreamPathTemplate": "/Faq/questions",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Faq/questions/{questionId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7086
+        }
+      ],
+      "UpstreamPathTemplate": "/Faq/questions/{questionId}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Faq/questions/{questionId}/answers",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7086
+        }
+      ],
+      "UpstreamPathTemplate": "/Faq/questions/{questionId}/answers",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Faq/questions/{questionId}/answers/{answerId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7086
+        }
+      ],
+      "UpstreamPathTemplate": "/Faq/questions/{questionId}/answers/{answerId}",
+      "UpstreamHttpMethod": [ "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Faq/votes/{answerId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7086
+        }
+      ],
+      "UpstreamPathTemplate": "/Faq/votes/{answerId}",
+      "UpstreamHttpMethod": [ "Post" ]
     }
-    // todo : add routes for the FAQ micro service
-    
+
+
 
   ],
   "GlobalConfiguration": {
