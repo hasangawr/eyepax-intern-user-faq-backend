@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {}
+    "C:\\Users\\DamikaAlwis\\Videos\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {}
   },
   "projects": {
-    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {
+    "C:\\Users\\DamikaAlwis\\Videos\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
+        "projectUniqueName": "C:\\Users\\DamikaAlwis\\Videos\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
         "projectName": "Api_Gateway_ocelot",
-        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
-        "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
-        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\obj\\",
+        "projectPath": "C:\\Users\\DamikaAlwis\\Videos\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
+        "packagesPath": "C:\\Users\\DamikaAlwis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DamikaAlwis\\Videos\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DamikaAlwis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
