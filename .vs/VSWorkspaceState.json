@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Api_Gateway_ocelot",
+    "\\Api_Gateway_ocelot\\Api_Gateway_ocelot",
+    "\\authenticationMicroService",
+    "\\FaqService"
+  ],
+  "SelectedNode": "\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\ocelot.json",
+  "PreviewInSolutionExplorer": false
+}

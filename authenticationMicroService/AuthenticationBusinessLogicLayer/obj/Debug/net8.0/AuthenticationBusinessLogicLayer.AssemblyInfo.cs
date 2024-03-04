@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthenticationBusinessLogicLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92361209b032a00b0df1f0d0d3df1d04cb01d20b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6d30ca732f6f9470f5800a0bac8307f22cd22a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthenticationBusinessLogicLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthenticationBusinessLogicLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

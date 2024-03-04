@@ -18,3 +18,23 @@ D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqS
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Dal.pdb
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Domain.pdb
 D:\Assignments\Micro Frontend\Intern_Project\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.csproj.CopyComplete
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Service.deps.json
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Service.runtimeconfig.json
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Service.dll
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Service.pdb
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Dal.dll
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Domain.dll
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Dal.pdb
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\bin\Debug\net8.0\FaqService.Domain.pdb
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.csproj.AssemblyReference.cache
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.AssemblyInfoInputs.cache
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.AssemblyInfo.cs
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.csproj.CoreCompileInputs.cache
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.sourcelink.json
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.csproj.CopyComplete
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.dll
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\refint\FaqService.Service.dll
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.pdb
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\FaqService.Service.genruntimeconfig.cache
+C:\Users\DamikaAlwis\Music\eyepax-intern-user-faq-backend\FaqService\FaqService.Service\obj\Debug\net8.0\ref\FaqService.Service.dll

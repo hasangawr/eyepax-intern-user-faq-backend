@@ -1933,23 +1933,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\": {},
+    "C:\\Users\\DamikaAlwis\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj",
+      "projectUniqueName": "C:\\Users\\DamikaAlwis\\Music\\eyepax-intern-user-faq-backend\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj",
       "projectName": "UserBusinessLogicLayer",
-      "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj",
-      "packagesPath": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\",
-      "outputPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserBusinessLogicLayer\\obj\\",
+      "projectPath": "C:\\Users\\DamikaAlwis\\Music\\eyepax-intern-user-faq-backend\\UserMicroService\\UserBusinessLogicLayer\\UserBusinessLogicLayer.csproj",
+      "packagesPath": "C:\\Users\\DamikaAlwis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DamikaAlwis\\Music\\eyepax-intern-user-faq-backend\\UserMicroService\\UserBusinessLogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\NusalMuthuthanthrige\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DamikaAlwis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1958,16 +1958,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\RabbitMQServices\\RabbitMqLocalNugets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
-              "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj"
+            "C:\\Users\\DamikaAlwis\\Music\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\DamikaAlwis\\Music\\eyepax-intern-user-faq-backend\\UserMicroService\\UserDataAccessLayer\\UserDataAccessLayer.csproj"
             }
           }
         }
@@ -2019,7 +2017,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
