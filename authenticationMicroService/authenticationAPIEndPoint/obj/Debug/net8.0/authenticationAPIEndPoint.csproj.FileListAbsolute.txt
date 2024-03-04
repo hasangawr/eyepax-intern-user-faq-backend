@@ -511,5 +511,4 @@ D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\authenticationMicro
 D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\authenticationMicroService\authenticationAPIEndPoint\bin\Debug\net8.0\MassTransit.AspNetCoreIntegration.dll
 D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\authenticationMicroService\authenticationAPIEndPoint\bin\Debug\net8.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
 D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\authenticationMicroService\authenticationAPIEndPoint\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
-D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\authenticationMicroService\authenticationAPIEndPoint\bin\Debug\net8.0\RabbitMQ.dll
 D:\DotNet\BackendInternProect\eyepax-intern-user-faq-backend\authenticationMicroService\authenticationAPIEndPoint\bin\Debug\net8.0\RabbitMQ.Client.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "becG4T1pYSurNM+hefZafitQ51yGZAkOlFEFK5vn4YlxbkEelzus9gEQOaxAhJO2UixCK7bv+rmh2edCYqjdUg==",
+  "dgSpecHash": "GNTGUdJvGvf35Rv3Cp4+6DBuGh1rOsEXcEgmkPPCG0CnFS8Vk5nK0xHBoc54CbVDd9CCNxmvML49Y1CA7cqnGQ==",
   "success": true,
   "projectFilePath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\authenticationAPIEndPoint.csproj",
   "expectedPackageFiles": [
@@ -137,7 +137,6 @@
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\nuget.projectmodel\\6.3.1\\nuget.projectmodel.6.3.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\nuget.protocol\\6.3.1\\nuget.protocol.6.3.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\nuget.versioning\\6.3.1\\nuget.versioning.6.3.1.nupkg.sha512",
-    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\rabbitmq\\1.0.0\\rabbitmq.1.0.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
