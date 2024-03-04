@@ -46,6 +46,15 @@ namespace FaqService.Service
             _faqRepo.DeleteAnswer(answerId);
         }
 
+        public Guid GetAnswerOwnerId(int questionId, int answerId)
+        {
+            if (AnswerExists(questionId, answerId))
+            {
+                return _faqRepo.GetAnswerOwnerId(answerId);
+            }
+            return Guid.Empty;
+        }
+
         public IEnumerable<AnswerReadDto> GetQuestionAnswers(Guid userId, int questionId)
         {
             var answers = _faqRepo.GetQuestionAnswers(questionId);

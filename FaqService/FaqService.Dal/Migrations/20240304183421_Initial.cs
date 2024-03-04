@@ -17,8 +17,7 @@ namespace FaqService.Dal.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    ExternalId = table.Column<int>(type: "integer", nullable: false),
-                    Name = table.Column<string>(type: "text", nullable: false)
+                    UserName = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {

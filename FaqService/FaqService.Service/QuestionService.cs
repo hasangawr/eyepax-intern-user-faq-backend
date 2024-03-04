@@ -80,5 +80,16 @@ namespace FaqService.Service
 
             return _mapper.Map<QuestionReadDto>(result);
         }
+
+        public Guid GetQuestionOwnerId(int questionId)
+        {
+            if (QuestionExists(questionId))
+            {
+                return _faqRepo.GetQuestionOwnerId(questionId);
+            }
+            return Guid.Empty;
+        }
+
+
     }
 }

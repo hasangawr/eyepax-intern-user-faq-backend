@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {}
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {}
   },
   "projects": {
-    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
         "projectName": "Api_Gateway_ocelot",
-        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
         "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
-        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\obj\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",

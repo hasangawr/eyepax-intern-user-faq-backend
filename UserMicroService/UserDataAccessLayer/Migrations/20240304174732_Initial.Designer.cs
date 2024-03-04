@@ -12,7 +12,7 @@ using UserDataAccessLayer.UserAppDbContext;
 namespace UserDataAccessLayer.Migrations
 {
     [DbContext(typeof(UserAppDbContextPostgre))]
-    [Migration("20240227062751_Initial")]
+    [Migration("20240304174732_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

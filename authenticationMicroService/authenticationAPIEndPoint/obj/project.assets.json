@@ -8267,24 +8267,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\authenticationAPIEndPoint.csproj",
+      "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\authenticationAPIEndPoint.csproj",
       "projectName": "authenticationAPIEndPoint",
-      "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\authenticationAPIEndPoint.csproj",
-      "packagesPath": "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\",
-      "outputPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\",
+      "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\authenticationAPIEndPoint.csproj",
+      "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
+      "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\authenticationMicroService\\authenticationAPIEndPoint\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\NusalMuthuthanthrige\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8292,19 +8287,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\RabbitMQServices\\RabbitMqLocalNugets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj": {
-              "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj"
+            "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj": {
+              "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationBusinessLogicLayer\\AuthenticationBusinessLogicLayer.csproj"
             },
-            "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {
-              "projectPath": "D:\\DotNet\\BackendInternProect\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj"
+            "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj": {
+              "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\authenticationMicroService\\AuthenticationDataAccessLayer\\AuthenticationDataAccessLayer.csproj"
             }
           }
         }

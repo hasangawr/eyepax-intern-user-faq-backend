@@ -77,6 +77,14 @@ namespace FaqService.Dal
             return _dbContext.Votes.Count(v => v.AnswerId == id && v.VoteType == "Like"); ;
         }
 
+        public Guid GetAnswerOwnerId(int answerId)
+        {
+            return _dbContext.Answers
+                            .Where(a => a.Id == answerId)
+                            .FirstOrDefault()
+                            .UserId;
+        }
+
         public IEnumerable<Question> GetFrequentlyAskedQuestions()
         {
             throw new NotImplementedException();
@@ -92,6 +100,14 @@ namespace FaqService.Dal
         public IEnumerable<Answer> GetQuestionAnswers(int questionId)
         {
             return _dbContext.Answers.Where(a => a.QuestionId == questionId);
+        }
+
+        public Guid GetQuestionOwnerId(int questionId)
+        {
+            return _dbContext.Questions
+                            .Where(q => q.Id == questionId)
+                            .FirstOrDefault()
+                            .UserId;
         }
 
         public string GetUserChoice(int answerId, Guid userId)

@@ -18,5 +18,6 @@ namespace FaqService.Service.interfaces
         QuestionReadDto GetQuestion(int questionId);
         bool QuestionExists(int questionId);
         QuestionReadDto UpdateQuestion(int questionId, QuestionCreateDto questionCreateDto);
+        Guid GetQuestionOwnerId(int questionId);
     }
 }

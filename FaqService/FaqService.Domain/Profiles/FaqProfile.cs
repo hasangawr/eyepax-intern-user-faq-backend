@@ -21,6 +21,8 @@ namespace FaqService.Domain.Profiles
             CreateMap<AnswerCreateDto, Answer>();
             CreateMap<VoteCreateDto, Vote>();
             CreateMap<Vote, VoteReadDto>();
+            CreateMap<UserPublishedDto, User>()
+                .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.FirstName));
         }
     }
 }

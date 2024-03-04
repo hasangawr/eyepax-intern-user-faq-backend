@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {}
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {}
   },
   "projects": {
-    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
         "projectName": "FaqService.Dal",
-        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\FaqService.Dal.csproj",
         "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
-        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\obj\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Dal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
-                "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
+              "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+                "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj"
               }
             }
           }
@@ -76,6 +76,10 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[7.4.0, )"
@@ -101,14 +105,14 @@
         }
       }
     },
-    "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
+    "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
+        "projectUniqueName": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
         "projectName": "FaqService.Domain",
-        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
+        "projectPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\FaqService.Domain.csproj",
         "packagesPath": "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\",
-        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\obj\\",
+        "outputPath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HasangaWeerasinghe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -168,6 +172,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

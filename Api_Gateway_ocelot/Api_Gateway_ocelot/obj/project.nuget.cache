@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yu0ua4Q776uyW/buUW6wGDFwm7wJ4k4nCoe6hw1iNJwcTVqSTr1Plj6f9RxSF0WuNQOGbotjqEiH9bVy9p8/vA==",
+  "dgSpecHash": "0nMDd948QYkBiyTuLx3/IKKiNlCRWHghzGq7asHH+CsDmIw8CCkIeEOJYsab+aOT34eVrafJFzOujOz61F9TqQ==",
   "success": true,
-  "projectFilePath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
+  "projectFilePath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\Api_Gateway_ocelot\\Api_Gateway_ocelot\\Api_Gateway_ocelot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",

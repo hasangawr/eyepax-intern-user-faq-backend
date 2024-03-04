@@ -20,30 +20,30 @@ namespace FaqService.Dal
         {
             Console.WriteLine("Seeding new data...");
 
-            var users = new List<User> 
-            {
-                new User
-                {
-                    ExternalId = 1,
-                    Name = "Hasanga"
-                },
-                new User
-                {
-                    ExternalId = 2,
-                    Name = "Damika"
-                },
-                new User
-                {
-                    ExternalId = 3,
-                    Name = "Nusal"
-                }
-            };
+            //var users = new List<User> 
+            //{
+            //    new User
+            //    {
+            //        ExternalId = 1,
+            //        Name = "Hasanga"
+            //    },
+            //    new User
+            //    {
+            //        ExternalId = 2,
+            //        Name = "Damika"
+            //    },
+            //    new User
+            //    {
+            //        ExternalId = 3,
+            //        Name = "Nusal"
+            //    }
+            //};
 
-            foreach (var user in users)
-            {
-                _faqRepo.CreateUser(user);
-                _faqRepo.SaveChanges();
-            }
+            //foreach (var user in users)
+            //{
+            //    _faqRepo.CreateUser(user);
+            //    _faqRepo.SaveChanges();
+            //}
 
 
 

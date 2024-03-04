@@ -20,5 +20,6 @@ namespace FaqService.Service.interfaces
 
         IEnumerable<AnswerReadDto> GetQuestionAnswers(Guid userId, int questionId);
         AnswerReadDto UpdateAnswer(Guid userId, int questionId, int answerId, AnswerCreateDto answerCreateDto);
+        Guid GetAnswerOwnerId(int questionId, int answerId);
     }
 }

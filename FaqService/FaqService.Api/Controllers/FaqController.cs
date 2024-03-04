@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Security.Claims;
+using System.Security.Principal;
 
 namespace FaqService.Api.Controllers
 {
@@ -19,8 +22,8 @@ namespace FaqService.Api.Controllers
         private readonly IVotesService _votesService;
 
         public FaqController(
-            IQuestionService questionService, 
-            IUserService userService, 
+            IQuestionService questionService,
+            IUserService userService,
             IAnswerService answerService,
             IVotesService votesService)
         {
@@ -46,8 +49,10 @@ namespace FaqService.Api.Controllers
 
 
         [HttpPost("questions")]
-        public ActionResult CreateQuestion(Guid userId, QuestionCreateDto questionCreateDto)
+        public ActionResult CreateQuestion(QuestionCreateDto questionCreateDto)
         {
+            Guid userId = GetCurrentUserId();
+
             if (!_userService.UserExists(userId))
             {
                 return NotFound("User not found");
@@ -83,9 +88,16 @@ namespace FaqService.Api.Controllers
         public ActionResult<QuestionReadDto> UpdateQuestion([FromRoute] int questionId,
             [FromBody] QuestionCreateDto questionCreateDto)
         {
+            Guid userId = GetCurrentUserId();
+
             if (!_questionService.QuestionExists(questionId))
             {
                 return NotFound("Question not found");
+            }
+
+            if (!(_questionService.GetQuestionOwnerId(questionId) == userId)) 
+            {
+                return Forbid();
             }
 
             QuestionReadDto question;
@@ -107,6 +119,13 @@ namespace FaqService.Api.Controllers
         [HttpDelete("questions/{questionId}")]
         public ActionResult DeleteQuestion(int questionId)
         {
+            Guid userId = GetCurrentUserId();
+
+            if (!(_questionService.GetQuestionOwnerId(questionId) == userId))
+            {
+                return Forbid();
+            }
+
             var question = _questionService.DeleteQuestion(questionId);
 
             if (question == null)
@@ -119,16 +138,20 @@ namespace FaqService.Api.Controllers
 
 
         [HttpGet("questions/{questionId}/answers")]
-        public ActionResult<IEnumerable<AnswerReadDto>> GetQuestionAnswers(Guid userId, int questionId)
+        public ActionResult<IEnumerable<AnswerReadDto>> GetQuestionAnswers(int questionId)
         {
+            Guid userId = GetCurrentUserId();
+
             return Ok(_answerService.GetQuestionAnswers(userId, questionId));
         }
 
 
         [HttpPost("questions/{questionId}/answers")]
         public ActionResult AddQuestionAnswers
-            (Guid userId, int questionId, AnswerCreateDto answerCreateDto)
+            (int questionId, AnswerCreateDto answerCreateDto)
         {
+            Guid userId = GetCurrentUserId();
+
             if (!_userService.UserExists(userId))
             {
                 return NotFound("User not found");
@@ -155,8 +178,9 @@ namespace FaqService.Api.Controllers
 
         [HttpPut("questions/{questionId}/answers/{answerId}")]
         public ActionResult<AnswerReadDto> UpdateAnswer
-            (Guid userId, int answerId, int questionId, AnswerCreateDto answerCreateDto)
+            (int answerId, int questionId, AnswerCreateDto answerCreateDto)
         {
+            Guid userId = GetCurrentUserId();
 
             if (!_questionService.QuestionExists(questionId))
             {
@@ -166,6 +190,11 @@ namespace FaqService.Api.Controllers
             if (!_answerService.AnswerExists(questionId, answerId))
             {
                 return NotFound("Answer not found");
+            }
+
+            if (!(_answerService.GetAnswerOwnerId(questionId,answerId) == userId))
+            {
+                return Forbid();
             }
 
             AnswerReadDto answerReadDto;
@@ -187,6 +216,8 @@ namespace FaqService.Api.Controllers
         [HttpDelete("questions/{questionId}/answers/{answerId}")]
         public ActionResult DeleteAnswer(int questionId, int answerId)
         {
+            Guid userId = GetCurrentUserId();
+
             if (!_questionService.QuestionExists(questionId))
             {
                 return NotFound("Question not found");
@@ -195,6 +226,11 @@ namespace FaqService.Api.Controllers
             if (!_answerService.AnswerExists(questionId, answerId))
             {
                 return NotFound("Answer not found");
+            }
+
+            if (!(_answerService.GetAnswerOwnerId(questionId, answerId) == userId))
+            {
+                return Forbid();
             }
 
             try
@@ -214,8 +250,10 @@ namespace FaqService.Api.Controllers
 
         // VOTES
         [HttpPost("votes/{answerId}")]
-        public ActionResult UpdateVotes(Guid userId, int answerId, VoteCreateDto voteCreateDto)
+        public ActionResult UpdateVotes(int answerId, VoteCreateDto voteCreateDto)
         {
+            Guid userId = GetCurrentUserId();
+
             if (!_userService.UserExists(userId))
             {
                 return NotFound("User not found");
@@ -233,5 +271,27 @@ namespace FaqService.Api.Controllers
             return Ok("Vote successfully updated");
         }
 
+
+
+        //get userId from the token
+        private Guid GetCurrentUserId()
+        {
+            var identity = HttpContext.User.Identity as ClaimsIdentity;
+
+            if (identity != null)
+            {
+                var userIdClaim = identity.Claims.First(c => c.Type == "UserId").Value;
+
+                if (Guid.TryParse(userIdClaim, out var userId))
+                {
+                    return userId;
+                }
+
+            }
+            return Guid.Empty;
+
+        }
+
     }
+
 }

@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FaqService.Dal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240301084157_Initial")]
+    [Migration("20240304183421_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -84,10 +84,7 @@ namespace FaqService.Dal.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<int>("ExternalId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("text");
 

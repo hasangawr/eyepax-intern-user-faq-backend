@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hWf09Xl7F8mCfR5xZjVB0FR6Wk9GoK1l/Zj9pL/a6YOkCKSOyHL8TSpI3n+0j0ZDkIuKMHgeMjXE3U+eRimgBQ==",
+  "dgSpecHash": "TryZ6LAA8t536iRAAlgLk/fd82qUGe4NkSpeB+8iTGJVv1DvXzGZaQa8zpzerKURZTEm+VIzKLi+kwJTFhm9Fw==",
   "success": true,
-  "projectFilePath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
+  "projectFilePath": "D:\\Assignments\\Micro Frontend\\Intern_Project\\final\\eyepax-intern-user-faq-backend\\FaqService\\FaqService.Service\\FaqService.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -40,6 +40,7 @@
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.2\\npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",
@@ -50,12 +51,13 @@
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.composition.typedparts\\6.0.0\\system.composition.typedparts.6.0.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.4.0\\system.identitymodel.tokens.jwt.7.4.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.reflection.metadata\\6.0.1\\system.reflection.metadata.6.0.1.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
+    "C:\\Users\\HasangaWeerasinghe\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

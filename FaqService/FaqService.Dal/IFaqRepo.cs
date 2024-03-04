@@ -33,5 +33,7 @@ namespace FaqService.Dal
         int GetAnswerLikeCount(int id);
         int GetAnswerDislikeCount(int id);
         string GetUserChoice(int answerId, Guid userId);
+        Guid GetQuestionOwnerId(int questionId);
+        Guid GetAnswerOwnerId(int answerId);
     }
 }

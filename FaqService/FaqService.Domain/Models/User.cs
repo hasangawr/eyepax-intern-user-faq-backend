@@ -12,8 +12,7 @@ namespace FaqService.Domain.Models
         [Key]
         [Required]
         public Guid Id { get; set; }
-        public int ExternalId { get; set; }
-        public string Name { get; set; } = string.Empty;
+        public string UserName { get; set; } = string.Empty;
 
         public ICollection<Question> Questions { get; set; } = new List<Question>();
         public ICollection<Answer> Answers { get; set; } = new List<Answer>();

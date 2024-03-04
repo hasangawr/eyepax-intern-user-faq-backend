@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UserMicroServiceAPIEndPoint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd7f92e920eae3e286d6890baa696d83f1a50e18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ba88246532a79e0554fe8b987577c2721706d29")]
 [assembly: System.Reflection.AssemblyProductAttribute("UserMicroServiceAPIEndPoint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UserMicroServiceAPIEndPoint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
