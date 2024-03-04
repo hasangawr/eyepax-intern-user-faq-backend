@@ -65,28 +65,29 @@ namespace AuthenticationBusinessLogicLayer.RabbitMqServices
             {
                 var body = ea.Body;
                 var notificationMessage = Encoding.UTF8.GetString(body.ToArray());
-                Console.WriteLine(notificationMessage);
+                //Console.WriteLine(notificationMessage);
 
                 // Resolve IAuthenticationRepo using service provider
                 using (var scope = _serviceProvider.CreateScope())
                 {
                     var authenticationRepo = scope.ServiceProvider.GetRequiredService<IAuthenticationRepo>();
                     UserMessage newUserMessage = JsonSerializer.Deserialize<UserMessage>(notificationMessage);
-                    if (newUserMessage.MessageType.Equals("Add"))
+                    if (newUserMessage.MessageType.Equals("Add") && newUserMessage.EventType.Equals("UserToAuthMessage"))
                     {
+                        Console.WriteLine(newUserMessage.EventType);
                         await authenticationRepo.SaveUser(newUserMessage.Id, newUserMessage.UserName, newUserMessage.Password);
                     }
-                    else if (newUserMessage.MessageType.Equals("Delete"))
+                    else if (newUserMessage.MessageType.Equals("Delete") && newUserMessage.EventType.Equals("UserToAuthMessage"))
                     {
                         await authenticationRepo.DeleteUserAsync(newUserMessage.Id);
                     }
-                    else if (newUserMessage.MessageType.Equals("Update"))
+                    else if (newUserMessage.MessageType.Equals("Update") && newUserMessage.EventType.Equals("UserToAuthMessage"))
                     {
                         await authenticationRepo.UpdateUserAsync(newUserMessage.Id, newUserMessage.UserName, newUserMessage.Password);
                     }
                     else
                     {
-                        Console.WriteLine($"---> Could not update the authentication user table");
+                        Console.WriteLine($"---> Auth Table update Error");
                     }
                     
                 }

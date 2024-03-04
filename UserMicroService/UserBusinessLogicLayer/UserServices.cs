@@ -44,9 +44,13 @@ namespace UserBusinessLogicLayer
                 InternalUser createdUser = await _userRepo.CreateUserAsync(user);
 
                 //synchronizing authentication Db
-                var pubUser = new UserMessage() { Id = user.Id, UserName = user.UserName, Password = user.Password, MessageType="Add"};
-                _messageClient.PublishNewUser(pubUser);
-             
+                var pubUser = new UserMessage() { Id = user.Id, UserName = user.UserName, Password = user.Password, EventType = "UserToAuthMessage", MessageType ="Add"};
+                _messageClient.PublishNewUserToAuthMs(pubUser);
+
+                //synchronizing Faq Db
+                var userToFaq = new UserToFaqMessage() { Id = user.Id, FirstName = user.FirstName, EventType= "UserToFaqMessage", MessageType="Add" };
+                _messageClient.PublishNewUserToFaqMs(userToFaq);
+
 
 
                 return createdUser;
@@ -65,8 +69,12 @@ namespace UserBusinessLogicLayer
             _userRepo.DeleteUserAsync(id);
 
             //synchronizing authentication Db
-            var pubUser = new UserMessage() { Id = id, UserName = "Delete User", Password = "Delete User", MessageType = "Delete" };
-            _messageClient.PublishNewUser(pubUser);
+            var pubUser = new UserMessage() { Id = id, UserName = "Delete User", Password = "Delete User", EventType = "UserToAuthMessage", MessageType = "Delete" };
+            _messageClient.PublishNewUserToAuthMs(pubUser);
+
+            //synchronizing Faq Db
+            var userToFaq = new UserToFaqMessage() { Id = id, FirstName = "Unkown User", EventType = "UserToFaqMessage", MessageType = "Delete" };
+            _messageClient.PublishNewUserToFaqMs(userToFaq);
         }
 
         public async Task<IEnumerable<InternalUser>> GetAllInternalUsersAsync()
@@ -107,8 +115,15 @@ namespace UserBusinessLogicLayer
             if(SyncCheckUser.UserName != UpdateUser.UserName || SyncCheckUser.Password != UpdateUser.Password)
             {
                 //synchronizing authentication Db
-                var pubUser = new UserMessage() { Id = UpdateUser.Id, UserName = UpdateUser.UserName, Password = UpdateUser.Password, MessageType = "Update" };
-                _messageClient.PublishNewUser(pubUser);
+                var pubUser = new UserMessage() { Id = UpdateUser.Id, UserName = UpdateUser.UserName, Password = UpdateUser.Password, EventType = "UserToAuthMessage", MessageType = "Update" };
+                _messageClient.PublishNewUserToAuthMs(pubUser);
+            }
+
+            if (SyncCheckUser.FirstName != UpdateUser.FirstName)
+            {
+                //synchronizing Faq Db
+                var userToFaq = new UserToFaqMessage() { Id = UpdateUser.Id, FirstName = UpdateUser.FirstName, EventType = "UserToFaqMessage", MessageType = "Update" };
+                _messageClient.PublishNewUserToFaqMs(userToFaq);
             }
 
 

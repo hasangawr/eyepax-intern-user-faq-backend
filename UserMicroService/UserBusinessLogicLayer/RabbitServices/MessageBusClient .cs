@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,9 +45,23 @@ namespace UserBusinessLogicLayer.RabbitServices
             }
         }
 
-        public void PublishNewUser(UserMessage uMessage)
+        public void PublishNewUserToAuthMs(UserMessage uMessage)
         {
             var message = JsonSerializer.Serialize(uMessage);
+
+            if (_connection.IsOpen)
+            {
+                Console.WriteLine("---> RabbitMQ Connection Open, sending message...");
+                SendMessage(message);
+            }
+            else
+            {
+                Console.WriteLine("---> RabbitMQ Connection is closed, not sending");
+            }
+        }
+        public void PublishNewUserToFaqMs(UserToFaqMessage Message)
+        {
+            var message = JsonSerializer.Serialize(Message);
 
             if (_connection.IsOpen)
             {

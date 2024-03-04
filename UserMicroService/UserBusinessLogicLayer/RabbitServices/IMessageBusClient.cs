@@ -9,6 +9,7 @@ namespace UserBusinessLogicLayer.RabbitServices
 {
     public interface IMessageBusClient
     {
-        void PublishNewUser(UserMessage platformPublishedDto);
+        void PublishNewUserToAuthMs(UserMessage uMessage);
+        void PublishNewUserToFaqMs(UserToFaqMessage UtoFaqMessage);
     }
 }
