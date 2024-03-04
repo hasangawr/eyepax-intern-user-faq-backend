@@ -19,6 +19,7 @@ namespace UserDataAccessLayer.UserAppRepo
         }
         public async Task<InternalUser> CreateUserAsync(InternalUser user)
         {
+
             await _context.internalUsers.AddAsync(user);
             await _context.SaveChangesAsync();
             return user;
@@ -39,6 +40,7 @@ namespace UserDataAccessLayer.UserAppRepo
                 _context.internalUsers.Remove(userToRemove);
                 await _context.SaveChangesAsync();
             }
+            
         }
 
         public async Task<IEnumerable<InternalUser>> GetAllInternalUsersAsync()

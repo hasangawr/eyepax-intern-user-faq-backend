@@ -44,7 +44,7 @@ namespace UserBusinessLogicLayer
                 InternalUser createdUser = await _userRepo.CreateUserAsync(user);
 
                 //synchronizing authentication Db
-                var pubUser = new UserMessage() { Id = user.Id, UserName = user.UserName, Password = user.Password };
+                var pubUser = new UserMessage() { Id = user.Id, UserName = user.UserName, Password = user.Password, MessageType="Add"};
                 _messageClient.PublishNewUser(pubUser);
              
 
@@ -63,6 +63,10 @@ namespace UserBusinessLogicLayer
         public void DeleteUserAsync(Guid id)
         {
             _userRepo.DeleteUserAsync(id);
+
+            //synchronizing authentication Db
+            var pubUser = new UserMessage() { Id = id, UserName = "Delete User", Password = "Delete User", MessageType = "Delete" };
+            _messageClient.PublishNewUser(pubUser);
         }
 
         public async Task<IEnumerable<InternalUser>> GetAllInternalUsersAsync()
@@ -87,7 +91,7 @@ namespace UserBusinessLogicLayer
 
         public async Task UpdateUserAsync(Guid id, PostUser postUser)
         {
-            var user = new InternalUser()
+            var UpdateUser = new InternalUser()
             {
                 Id = id,
                 FirstName = postUser.FirstName,
@@ -97,7 +101,18 @@ namespace UserBusinessLogicLayer
                 UserName = postUser.UserName,
                 Role = postUser.Role
             };
-            await _userRepo.UpdateUserAsync(user);
+
+            var SyncCheckUser = await _userRepo.GetInternalUserAsync(id);
+
+            if(SyncCheckUser.UserName != UpdateUser.UserName || SyncCheckUser.Password != UpdateUser.Password)
+            {
+                //synchronizing authentication Db
+                var pubUser = new UserMessage() { Id = UpdateUser.Id, UserName = UpdateUser.UserName, Password = UpdateUser.Password, MessageType = "Update" };
+                _messageClient.PublishNewUser(pubUser);
+            }
+
+
+            await _userRepo.UpdateUserAsync(UpdateUser);
         }
     }
 }
